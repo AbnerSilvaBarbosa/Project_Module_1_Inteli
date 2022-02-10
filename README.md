@@ -8,11 +8,25 @@
 
 ## Dive INC
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: 
+
+  * Abner
+  * Amanda
+  * Felipe Campos
+  * Guilherme Costa
+  * João Carazzato
+  * Livia Coutinho
+  * Pedro
+  * Yves
 
 ## Descrição
 
-📜Meu projeto é um jogo sobre Diversidade e Inclusão.
+📜Nosso projeto consiste em uma forma divertida sobre ensinar diversidade e inclusão aos funcionarios da <a href="https://www.ambev.com.br/">AMBEV</a>.
+<p align="center">
+<img src="https://adalove.inteli.edu.br/newada-img/groups/fc232015-a2d2-4aa8-8491-0dc98cd4419f.jpeg" alt="NOME DO JOGO AQUI" border="0"></p>
+ 
+<p align="center">Imagem by <a href="google.com">DIVE INC</a> Under <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+</p>
 
 <br><br>
 <p align="center">
@@ -21,12 +35,11 @@
 </p>
 
 
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
+💡 Nosso projeto se trata de um jogo que consiste na existência de 3 mundos, possuindo um mundo principal que dá acesso aos outros dois. Desse modo, tendo em vista que o jogo a ser desenvolvido trata-se de Diversidade e Inclusão, os dois mundos subsequentes ao oficial estarão relacionados, cada um, a uma diversidade social. Tendo a ideia exposta em mente, analisa-se que a melhor maneira de fazer um jogo de perguntas e respostas — como foi solicitado pelo cliente — é efetuar diversos minigames com o mesmo formato (contendo uma pergunta e, logo em seguida, 5 alternativas de resposta), sendo que em cada mundo os minigames serão relacionados à diversidade apresentada no mesmo. Além disso, é proposta a ideia de incluir no jogo um sistema de pontuação, no qual a cada minigame com resposta correta irá incrementar pontuação a conta do usuário. Assim, caso o cliente aceite um sistema de recompensas, o maior meio de atrair um maior número de usuários será através da troca de pontos por produtos fornecidos pelo cliente.
 <br><br>
-Meu projeto ajuda funcionarios da Ambev a se divertirem e aprenderem sobre Diversidade e Inclusão.
+💡Our project is a game that consists of the existence of 3 worlds, having a main world that gives access to the other two. Thus, given that the game to be developed is about Diversity and Inclusion, the two worlds subsequent to the official one will each be related to a social diversity. Keeping the idea in mind, it is analyzed that the best way to make a question and answer game — as requested by the client — is to make several minigames with the same format (containing a question and, soon after, 5 alternatives of answer), and in each world the minigames will be related to the diversity presented in it. In addition, the idea of ​​including a scoring system in the game is proposed, in which each minigame with a correct answer will increase the user account's score. Thus, if the customer accepts a rewards system, the greatest means of attracting a greater number of users will be through the exchange of points for products provided by the customer.
 <br><br>
-May the force be with you!
-<br><br>
+
 
 ## 🛠 Estrutura de pastas
 
@@ -96,7 +109,16 @@ Descreva como instalar todas as dependências para desenvolvimento e como rodar 
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+<div>
+  <a href="https://godotengine.org/">
+</div>
+<div style="display: inline_block"><br>
+  <img align="center" alt="Dive-Inc-Godot" height="60" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original-wordmark.svg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+</div></a>
+
+&emsp;
 
 ```sh
 make install
@@ -105,11 +127,13 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
+* 0.0.2 - 10/02/2022
+  * Edições no GitHub
+  * Explicação sobre o projeto
 
-A cada atualização os detalhes devem ser lançados aqui.
-
-* 0.0.1 - 10/02/2022
+* 0.0.1 - 08/02/2022
     * Trabalho em andamento
+    * Criação do GitHub
 
 ## 📋 Licença/License
 
