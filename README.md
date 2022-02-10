@@ -6,7 +6,7 @@
 
 # Nome do Projeto
 
-## Nome do Grupo
+## Dive INC
 
 ## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
 
@@ -14,7 +14,7 @@
 
 📜 Descrição curta sobre o que seu projeto faz.
 <br><br>
-Meu projeto é um exemplo de como utilizar o github.
+Meu projeto é um jogo sobre Diversidade e Inclusão.
 <br><br>
 <p align="center">
 <img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
@@ -24,7 +24,7 @@ Meu projeto é um exemplo de como utilizar o github.
 
 💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
+Meu projeto ajuda funcionarios da Ambev a se divertirem e aprenderem sobre Diversidade e Inclusão.
 <br><br>
 May the force be with you!
 <br><br>
