@@ -32,7 +32,7 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed("ui_m"):
 		beVisible(true)
-		setPopUpContent('Pergunta ao usuario', 'Resposta A', 'Resposta B', 'Resposta C')
+		setPopUpContent('Testeeeeeeeeeee', 'Answer1', 'Answer2', 'Answer3')
 		anc = 2
 #	pass
 
