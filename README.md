@@ -131,6 +131,21 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
+* 0.0.5 - 17/02/2022
+  * Adicionado camêra junto dos PopUps
+  * Adcionado minigame de Atari
+  * Criado sistema para Quiz interativo quando entra em uma determinada área
+
+
+* 0.0.4 - 16/02/2022
+  * Mudanças e atualizações no GDD
+
+* 0.0.3 - 14/02/2022
+  * Ampliação de cenário
+  * Adicionado sombra do personagem
+  * Adicionado sitema de pontuação
+  * Código refatorado
+
 * 0.0.2 - 10/02/2022
   * Edições no GitHub
   * Explicação sobre o projeto
@@ -141,7 +156,7 @@ Coloque código do prompt de comnando se for necessário
 
 ## 📋 Licença/License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T1/Projeto1">DiveInc</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/pedro-hagge-baptista-95160b219, https://www.linkedin.com/in/abner-silva-barbosa-8a3542225, https://www.linkedin.com/in/amanda-fontes/, https://www.linkedin.com/in/liviapcoutinho/, https://www.linkedin.com/in/jo%C3%A3o-pedro-gon%C3%A7alves-carazzato-147120231/, https://www.linkedin.com/in/yves-levi-paix%C3%A3o-lapa-5a96b8161/">Pedro Hagge Baptista, Abner Silva Barbosa, Yves Levi Paixão Lapa, João Pedro Gonçalves Carazzato, Amanda Ribeiro Fontes, Livia Coutinho, Guilherme Costa, Felipe Campos</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 ## 🎓 Referências
 
