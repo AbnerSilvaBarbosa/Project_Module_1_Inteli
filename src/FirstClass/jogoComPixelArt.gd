@@ -10,13 +10,17 @@ var isVisible = true
 var anc = 0
 var levelPassed = false
 var liberadoAbrir = false
+var liberadoAbrirE = false
 
 func beVisible(visible): 
 	$Personagem/Camera/CanvasLayer/Popups/Popup.visible = visible  #Abre o PopUp do quiz
 	
 func MensagemPressM(visible):
 	$Personagem/Camera/CanvasLayer/Popups/Popup3.visible = visible # Aparece para apertar M.
-	
+
+func MensagemPressE(visible):
+	$Personagem/Camera/CanvasLayer/Popups/Popup4.visible = visible # Aparece para apertar M.
+
 func messageFinal(text):
 	$Personagem/Camera/CanvasLayer/Popups/Popup2.visible = true
 										#Abre o PopUp de resposta com "Acertou" ou "Errou"
@@ -55,6 +59,9 @@ func _process(delta):
 	#			$Collisions/mecanicaTeste.disabled = true
 	#		else:
 	#			$Collisions/mecanicaTeste.disabled = false
+	elif liberadoAbrirE:
+		if Input.is_action_pressed("ui_e"):
+			get_tree().change_scene("res://pong.tscn")
 	else:
 		pass
 
@@ -135,7 +142,15 @@ func _on_Area2D_body_exited(body):
 
 func _on_Area2D2_body_entered(body):
 	if body.name == 'Personagem':
-		get_tree().change_scene("res://pong.tscn")
+		#get_tree().change_scene("res://pong.tscn")
+		liberadoAbrirE = true
+		MensagemPressE(true)
+	pass # Replace with function body.
+
+func _on_Area2D2_body_exited(body):
+	if body.name == 'Personagem':
+		liberadoAbrirE = false
+		MensagemPressE(false)
 	pass # Replace with function body.
 
 
@@ -151,6 +166,22 @@ func _pergunta2Enter(body):
 
 
 func _exitedPergunta2(body):
+	if body.name == 'Personagem':
+		liberadoAbrir = false
+		MensagemPressM(false)
+	pass # Replace with function body.
+
+
+func _on_Pergunta3_body_entered(body):
+	if body.name == 'Personagem':
+		liberadoAbrir = true
+		MensagemPressM(true)
+		setPopUpContent('Quem descobriu o Brasil', 'Pedro Alvares Cabral', 'Frei Henrique de Coimbra', 'Pero vaz de Caminha')
+		anc = 1
+	pass # Replace with function body.
+
+
+func _on_Pergunta3_body_exited(body):
 	if body.name == 'Personagem':
 		liberadoAbrir = false
 		MensagemPressM(false)

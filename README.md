@@ -4,7 +4,7 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+# D&Imon
 
 ## Dive INC
 
@@ -131,6 +131,14 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
+* 0.0.6 - 18/02/2022
+  * |Camera centralizada no personagem
+  * Personagem com nova posição de start
+  * Cenário recraido com tilemap
+  * Tiles do cenário com cores alteradas
+  * Adicionada novas colisões
+  * Adicionado EasterEgg
+
 * 0.0.5 - 17/02/2022
   * Adicionado camêra junto dos PopUps
   * Adcionado minigame de Atari

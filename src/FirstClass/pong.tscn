@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://logic/paddle.gd" type="Script" id=1]
 [ext_resource path="res://paddle.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://logic/wall.gd" type="Script" id=7]
 [ext_resource path="res://logic/ceiling_floor.gd" type="Script" id=8]
 [ext_resource path="res://LeftWall.gd" type="Script" id=9]
+[ext_resource path="res://Hey Comic.ttf" type="DynamicFontData" id=10]
 
 [sub_resource type="GDScript" id=5]
 script/source = "extends Node2D
@@ -29,7 +30,7 @@ func _ready():
 	pass # Replace with function body.
 	
 func _process(delta):
-	if $Pontos.text == '2':
+	if $Pontos.text == '5':
 		$Parabens.visible = true
 		get_tree().paused = true
 		yield(get_tree().create_timer(3.0), \"timeout\")
@@ -38,7 +39,11 @@ func _process(delta):
 	else:
 		pass
 
-
+##Retornar para a cena principal quando o ESC e apertado
+func _unhandled_input(event):
+	if event is InputEventKey:
+		if event.pressed and event.scancode == KEY_ESCAPE:
+			get_tree().change_scene(\"res://jogoComPixelArt.tscn\")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
@@ -55,6 +60,12 @@ extents = Vector2( 10, 93.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 159.5, 10 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 10 )
 
 [node name="Pong" type="Node2D"]
 script = SubResource( 5 )
@@ -142,6 +153,7 @@ shape = SubResource( 4 )
 margin_left = 280.0
 margin_right = 320.0
 margin_bottom = 20.0
+custom_fonts/font = SubResource( 6 )
 text = "0"
 align = 1
 valign = 1
@@ -151,10 +163,11 @@ __meta__ = {
 
 [node name="Parabens" type="Label" parent="."]
 visible = false
-margin_left = 58.0
-margin_top = 15.0
-margin_right = 270.0
-margin_bottom = 73.0
+margin_left = 39.0
+margin_top = 22.0
+margin_right = 298.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 7 )
 text = "Parabéns, você conseguiu ajudar."
 align = 1
 valign = 1

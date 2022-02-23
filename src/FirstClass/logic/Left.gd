@@ -5,7 +5,7 @@ const MOVE_SPEED = 100
 var _ball_dir
 var _up
 var _down
-var teste = 1
+var teste = 1.5
 
 onready var _screen_size_y = get_viewport_rect().size.y
 
@@ -17,7 +17,6 @@ func _ready():
 	
 	
 	var n = String(name).to_lower()
-	print(n)
 	_up = n + "_move_up"
 	_down = n + "_move_down"
 	if n == "left":
@@ -41,11 +40,11 @@ func _on_area_entered(area):
 
 func _tocouEmbaixo(area):
 	if area.name == "Left":
-		teste = -1
+		teste = -1.5
 	pass # Replace with function body.
 
 
 func _on_Ceiling_area_entered(area):
 	if area.name == "Left":
-		teste = 1
+		teste = 1.5
 	pass # Replace with function body.

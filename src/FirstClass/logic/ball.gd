@@ -1,6 +1,6 @@
 extends Area2D
 
-const DEFAULT_SPEED = 100
+const DEFAULT_SPEED = 150
 
 var _speed = DEFAULT_SPEED
 var direction = Vector2.RIGHT

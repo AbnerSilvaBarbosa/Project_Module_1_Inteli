@@ -10,7 +10,6 @@ onready var _screen_size_y = get_viewport_rect().size.y
 
 func _ready():
 	var n = String(name).to_lower()
-	print(n)
 	_up = n + "_move_up"
 	_down = n + "_move_down"
 	if n == "left":
