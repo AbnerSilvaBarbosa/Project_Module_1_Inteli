@@ -1,0 +1,1128 @@
+[gd_scene load_steps=65 format=2]
+
+[ext_resource path="res://Action RPG Resources/Tileset/scifi_platformTiles_16x16.png" type="Texture" id=1]
+[ext_resource path="res://Jelly Anika.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Hey Comic.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Pokemon Hollow.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Action RPG Resources/Player/Pixilart Sprite Sheet.png" type="Texture" id=5]
+[ext_resource path="res://Action RPG Resources/Player/RpgCharacterShadow.png" type="Texture" id=6]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=7]
+[ext_resource path="res://Action RPG Resources/UI/HeartUIEmpty.png" type="Texture" id=8]
+[ext_resource path="res://fundoMarket.png" type="Texture" id=9]
+[ext_resource path="res://Action RPG Resources/Texture/ambev.png" type="Texture" id=10]
+[ext_resource path="res://Action RPG Resources/UI/HeartUIFull.png" type="Texture" id=11]
+[ext_resource path="res://D&IMental.gd" type="Script" id=12]
+[ext_resource path="res://portal texture.png" type="Texture" id=13]
+
+[sub_resource type="TileSet" id=1]
+0/name = "scifi_platformTiles_16x16.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 432, 192, 16, 16 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "scifi_platformTiles_16x16.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 288, 128, 48, 48 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 0
+1/autotile/bitmask_flags = [ Vector2( 0, 0 ), 256, Vector2( 0, 1 ), 260, Vector2( 0, 2 ), 4, Vector2( 1, 0 ), 320, Vector2( 1, 1 ), 325, Vector2( 1, 2 ), 5, Vector2( 2, 0 ), 64, Vector2( 2, 1 ), 65, Vector2( 2, 2 ), 1 ]
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "scifi_platformTiles_16x16.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 352, 256, 16, 16 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "scifi_platformTiles_16x16.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 80, 160, 16, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "scifi_platformTiles_16x16.png 4"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 32, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "scifi_platformTiles_16x16.png 5"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 48, 80, 16, 16 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "scifi_platformTiles_16x16.png 6"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 144, 304, 48, 48 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=50]
+radius = 81.0
+height = 0.0
+
+[sub_resource type="Animation" id=51]
+resource_name = "New Anim"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 1, 0 ), Vector2( 2, 0 ), Vector2( 3, 0 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5.5, 12.5 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -11.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "bater_baixo"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 36, 37, 38, 39, 18 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "bater_cima"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 28, 29, 30, 31, 6 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "bater_direita"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 24, 25, 26, 27, 0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "bater_esquerda"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 32, 33, 34, 35, 12 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "correndo_para_baixo"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 6 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sombra:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "correndo_para_cima"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sombra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "correndo_para_direita"
+length = 0.65
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sombra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "correndo_para_esquerda"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sombra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+
+[sub_resource type="GDScript" id=12]
+script/source = "extends Camera2D
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="DynamicFont" id=13]
+size = 25
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=16]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0, 0.576471, 1, 1 )
+border_color = Color( 0.270588, 0.247059, 0.247059, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=19]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=23]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0, 0.576471, 1, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=27]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=28]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=29]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=30]
+size = 18
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0, 0.576471, 1, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="DynamicFont" id=33]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=34]
+size = 13
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=35]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="DynamicFont" id=37]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=38]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=40]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=41]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=44]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=45]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=48]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=49]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="D&IMental" type="Node2D"]
+script = ExtResource( 12 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -327680, -1610612731, 0, -327679, -1610612731, 0, -327678, -1610612731, 0, -327677, -1610612731, 0, -327676, -1610612731, 0, -327675, -1610612731, 0, -327674, -1610612731, 0, -327673, -1610612731, 0, -327672, -1610612731, 0, -327671, -1610612731, 0, -327670, -1610612731, 0, -327669, -1610612731, 0, -327668, -1610612731, 0, -327667, -1610612731, 0, -327666, -1610612731, 0, -327665, -1610612731, 0, -327664, -1610612731, 0, -327663, -1610612731, 0, -327662, -1610612731, 0, -327661, -1610612731, 0, -327660, -1610612731, 0, -327659, -1610612731, 0, -327658, -1610612731, 0, -327657, -1610612731, 0, -327656, -1610612731, 0, -327655, -1610612731, 0, -327654, -1610612731, 0, -327653, -1610612731, 0, -262144, -1610612731, 0, -262143, -1610612731, 0, -262142, -1610612731, 0, -262141, -1610612731, 0, -262140, -1610612731, 0, -262139, -1610612731, 0, -262138, -1610612731, 0, -262127, -1610612731, 0, -262126, -1610612731, 0, -262125, -1610612731, 0, -262124, -1610612731, 0, -262123, -1610612731, 0, -262122, -1610612731, 0, -262121, -1610612731, 0, -262120, -1610612731, 0, -262119, -1610612731, 0, -262118, -1610612731, 0, -262117, -1610612731, 0, -196608, -1610612731, 0, -196607, -1610612731, 0, -196606, -1610612731, 0, -196605, -1610612731, 0, -196604, -1610612731, 0, -196603, -1610612731, 0, -196602, -1610612731, 0, -196601, -1610612731, 0, -196600, -1610612731, 0, -196599, -1610612731, 0, -196598, -1610612731, 0, -196597, -1610612731, 0, -196596, -1610612731, 0, -196595, -1610612731, 0, -196594, -1610612731, 0, -196593, -1610612731, 0, -196592, -1610612731, 0, -196591, -1610612731, 0, -196590, -1610612731, 0, -196589, -1610612731, 0, -196588, -1610612731, 0, -196587, -1610612731, 0, -196586, -1610612731, 0, -196585, -1610612731, 0, -196584, -1610612731, 0, -196583, -1610612731, 0, -196582, -1610612731, 0, -196581, -1610612731, 0, -131072, 4, 0, -131070, 4, 0, -131068, 4, 0, -131066, -1610612731, 0, -131065, -1610612731, 0, -131064, -1610612731, 0, -131063, -1610612731, 0, -131062, -1610612731, 0, -131061, -1610612731, 0, -131058, -1610612731, 0, -131057, -1610612731, 0, -131056, -1610612731, 0, -131055, -1610612731, 0, -131054, -1610612731, 0, -131053, 4, 0, -131051, 4, 0, -131049, 4, 0, -131047, 4, 0, -131045, -1610612731, 0, -65530, -1610612731, 0, -65529, -1610612731, 0, -65528, -1610612731, 0, -65527, -1610612731, 0, -65526, -1610612731, 0, -65525, -1610612731, 0, -65524, -1610612731, 0, -65523, -1610612731, 0, -65522, -1610612731, 0, -65521, -1610612731, 0, -65520, -1610612731, 0, -65519, -1610612731, 0, -65518, -1610612731, 0, -65509, -1610612731, 0, 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 1, 0, 8, 1, 1, 9, 1, 1, 10, 1, 1, 11, 1, 1, 12, 1, 1, 13, 1, 1, 14, 1, 1, 15, 1, 2, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 4, 0, 21, 2, 0, 22, 2, 0, 23, 2, 0, 24, 2, 0, 25, 2, 0, 26, 2, 0, 27, 2, 0, 65536, 2, 0, 65537, 2, 0, 65538, 2, 0, 65539, 2, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 1, 65536, 65544, 1, 65537, 65545, 1, 65537, 65546, 1, 65537, 65547, 1, 65537, 65548, 1, 65537, 65549, 1, 65537, 65550, 1, 65537, 65551, 1, 65538, 65552, 0, 0, 65553, 0, 0, 65554, 0, 0, 65557, 2, 0, 65558, 2, 0, 65559, 2, 0, 65560, 2, 0, 65561, 2, 0, 65562, 2, 0, 65563, 2, 0, 131072, 2, 0, 131073, 2, 0, 131074, 2, 0, 131075, 2, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 1, 131072, 131080, 1, 131073, 131081, 1, 131073, 131082, 1, 131073, 131083, 1, 131073, 131084, 1, 131073, 131085, 1, 131073, 131086, 1, 131073, 131087, 1, 131074, 131088, 0, 0, 131089, 0, 0, 131090, 0, 0, 131091, 2, 0, 131092, 2, 0, 131093, 2, 0, 131094, -1610612731, 0, 131095, 2, 0, 131096, 2, 0, 131097, 2, 0, 131098, 2, 0, 131099, 2, 0, 196608, 2, 0, 196609, -1610612731, 0, 196610, 2, 0, 196611, 2, 0, 196612, -1610612730, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 196624, -1610612730, 0, 196627, 2, 0, 196628, 2, 0, 196629, 2, 0, 196630, 3, 0, 196631, 2, 0, 196632, 2, 0, 196633, 2, 0, 196634, 2, 0, 196635, 2, 0, 262144, 2, 0, 262145, 3, 0, 262146, 2, 0, 262147, 2, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262163, 2, 0, 262164, 2, 0, 262165, 2, 0, 262167, 2, 0, 262168, 2, 0, 262169, 2, 0, 262170, 2, 0, 262171, 2, 0, 327680, 2, 0, 327682, 2, 0, 327683, 2, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327699, 2, 0, 327700, 2, 0, 327701, 2, 0, 327702, 2, 0, 327703, 2, 0, 327704, 2, 0, 327705, 2, 0, 327706, 2, 0, 327707, 2, 0, 393216, 2, 0, 393217, -1610612734, 0, 393218, 2, 0, 393219, 2, 0, 393220, 2, 0, 393221, 2, 0, 393222, 2, 0, 393223, 2, 0, 393224, 2, 0, 393225, 2, 0, 393226, 2, 0, 393227, 2, 0, 393228, 2, 0, 393229, 2, 0, 393230, 2, 0, 393231, 2, 0, 393232, 2, 0, 393233, 2, 0, 393234, 2, 0, 393235, 2, 0, 393236, 2, 0, 393237, 2, 0, 393238, 2, 0, 393239, 2, 0, 393240, 2, 0, 393241, 2, 0, 393242, 2, 0, 393243, 2, 0, 458752, 2, 0, 458753, 2, 0, 458754, 2, 0, 458755, 2, 0, 458756, 2, 0, 458757, 2, 0, 458758, 2, 0, 458759, 2, 0, 458760, 2, 0, 458761, 2, 0, 458762, 2, 0, 458763, 2, 0, 458764, 2, 0, 458765, 2, 0, 458766, 2, 0, 458767, 2, 0, 458768, 2, 0, 458769, 2, 0, 458770, 2, 0, 458771, 2, 0, 458772, 2, 0, 458773, 2, 0, 458774, 2, 0, 458775, 2, 0, 458776, 2, 0, 458777, 2, 0, 458778, 2, 0, 458779, 2, 0, 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0, 524292, 2, 0, 524293, 2, 0, 524294, 2, 0, 524295, 2, 0, 524296, 2, 0, 524297, 2, 0, 524298, 2, 0, 524299, -1610612733, 0, 524301, -1610612731, 0, 524302, 2, 0, 524303, 2, 0, 524304, 2, 0, 524305, 2, 0, 524306, 2, 0, 524307, 2, 0, 524308, 2, 0, 524309, 2, 0, 524310, 2, 0, 524311, 2, 0, 524312, 2, 0, 524313, 2, 0, 524314, 2, 0, 524315, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589832, 2, 0, 589833, 2, 0, 589834, 2, 0, 589835, 2, 0, 589836, 2, 0, 589837, 2, 0, 589838, 2, 0, 589839, 2, 0, 589840, 2, 0, 589841, 2, 0, 589842, 2, 0, 589843, 2, 0, 589844, 2, 0, 589845, 2, 0, 589846, 2, 0, 589847, 2, 0, 589848, 2, 0, 589849, 2, 0, 589850, 2, 0, 589851, 2, 0, 655360, 2, 0, 655361, -1610612731, 0, 655362, 2, 0, 655363, 2, 0, 655364, 2, 0, 655365, 2, 0, 655366, 2, 0, 655367, 2, 0, 655368, 2, 0, 655369, 2, 0, 655370, 2, 0, 655371, 2, 0, 655372, 2, 0, 655373, 2, 0, 655374, 2, 0, 655375, 2, 0, 655376, 2, 0, 655377, 2, 0, 655378, 2, 0, 655379, 2, 0, 655380, 2, 0, 655381, 2, 0, 655382, 2, 0, 655383, 2, 0, 655384, 2, 0, 655385, 2, 0, 655386, -1610612731, 0, 655387, 2, 0, 720896, 2, 0, 720897, 2, 0, 720898, 2, 0, 720899, 2, 0, 720900, 2, 0, 720901, 2, 0, 720902, 2, 0, 720903, 2, 0, 720904, 2, 0, 720905, 2, 0, 720906, 2, 0, 720907, 2, 0, 720908, 2, 0, 720909, 2, 0, 720910, 2, 0, 720911, 2, 0, 720912, 2, 0, 720913, 2, 0, 720914, 2, 0, 720915, 2, 0, 720916, 2, 0, 720917, 2, 0, 720918, 2, 0, 720919, 2, 0, 720920, 2, 0, 720921, 2, 0, 720922, 2, 0, 720923, 2, 0 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2( -1314, 1761 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( 1492, -1827 )
+shape = SubResource( 50 )
+
+[node name="Sprite" type="Sprite" parent="Area2D3"]
+position = Vector2( 1503, -1820 )
+scale = Vector2( 0.842222, 0.310185 )
+texture = ExtResource( 13 )
+hframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D3/Sprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 51 )
+
+[node name="Personagem" type="KinematicBody2D" parent="."]
+position = Vector2( 156, 24 )
+script = ExtResource( 7 )
+
+[node name="Sombra" type="Sprite" parent="Personagem"]
+position = Vector2( 36, 34 )
+scale = Vector2( 1.1875, 1 )
+texture = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Personagem"]
+position = Vector2( 36, 34 )
+texture = ExtResource( 5 )
+hframes = 12
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem"]
+position = Vector2( 36.4999, 51.5 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Personagem"]
+anims/RESET = SubResource( 3 )
+anims/bater_baixo = SubResource( 4 )
+anims/bater_cima = SubResource( 5 )
+anims/bater_direita = SubResource( 6 )
+anims/bater_esquerda = SubResource( 7 )
+anims/correndo_para_baixo = SubResource( 8 )
+anims/correndo_para_cima = SubResource( 9 )
+anims/correndo_para_direita = SubResource( 10 )
+anims/correndo_para_esquerda = SubResource( 11 )
+
+[node name="Camera" type="Camera2D" parent="Personagem"]
+position = Vector2( 36, 37 )
+current = true
+zoom = Vector2( 1.6, 1.6 )
+limit_smoothed = true
+script = SubResource( 12 )
+
+[node name="EXP" type="Label" parent="Personagem/Camera"]
+pause_mode = 2
+margin_left = 140.0
+margin_top = -144.0
+margin_right = 188.0
+margin_bottom = -109.0
+custom_fonts/font = SubResource( 13 )
+text = "EXP"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pontos" type="Label" parent="Personagem/Camera"]
+pause_mode = 2
+margin_left = 177.0
+margin_top = -142.0
+margin_right = 254.0
+margin_bottom = -107.0
+custom_fonts/font = SubResource( 13 )
+text = "10000"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Personagem/Camera"]
+
+[node name="Popups" type="Popup" parent="Personagem/Camera/CanvasLayer"]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup3" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup3"]
+margin_left = 115.0
+margin_top = 157.0
+margin_right = 207.0
+margin_bottom = 198.0
+custom_fonts/font = SubResource( 14 )
+text = "Pressione M
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup2" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+pause_mode = 2
+margin_left = 111.0
+margin_top = 61.0
+margin_right = 215.0
+margin_bottom = 101.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoMarket" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup2"]
+position = Vector2( 49, 29 )
+scale = Vector2( 0.356522, 0.310744 )
+texture = ExtResource( 9 )
+
+[node name="Ambev" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup2"]
+position = Vector2( 178, -46 )
+scale = Vector2( 0.125672, 0.114163 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup2"]
+pause_mode = 2
+margin_right = 98.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 15 )
+text = "Errou"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup4" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 94.0
+margin_top = 158.0
+margin_right = 183.0
+margin_bottom = 177.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup4"]
+margin_left = 19.0
+margin_right = 111.0
+margin_bottom = 41.0
+custom_fonts/font = SubResource( 14 )
+text = "Pressione E
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mercado" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 4.0
+margin_top = 8.0
+margin_right = 315.0
+margin_bottom = 164.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoMarket" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+position = Vector2( 156, 82 )
+scale = Vector2( 0.352174, 0.304132 )
+texture = ExtResource( 9 )
+
+[node name="Ambev" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+position = Vector2( 24, 7 )
+scale = Vector2( 0.125672, 0.114163 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 36.0
+margin_top = 20.0
+margin_right = 287.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 16 )
+text = "Seja bem-vindo(a) ao Mercado!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 7.0
+margin_top = 53.0
+margin_right = 94.0
+margin_bottom = 145.0
+custom_styles/hover = SubResource( 17 )
+custom_styles/pressed = SubResource( 17 )
+custom_styles/focus = SubResource( 17 )
+custom_styles/normal = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+margin_left = 7.0
+margin_top = 2.0
+margin_right = 82.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 19 )
+text = "Nome: +Vida"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+margin_left = 7.0
+margin_top = 19.0
+margin_right = 77.0
+margin_bottom = 72.0
+custom_fonts/font = SubResource( 20 )
+text = "Descrição: Vidas são utilizadas para conversar com os NPCs"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+margin_left = 7.0
+margin_top = 74.0
+margin_right = 47.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 21 )
+text = "Preço: 1000XP"
+
+[node name="Button2" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 111.0
+margin_top = 55.0
+margin_right = 198.0
+margin_bottom = 147.0
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 22 )
+custom_styles/focus = SubResource( 22 )
+custom_styles/normal = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+margin_left = 6.0
+margin_top = 5.0
+margin_right = 59.0
+margin_bottom = 18.0
+custom_fonts/font = SubResource( 19 )
+text = "Nome: Fase1"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+margin_left = 6.0
+margin_top = 20.0
+margin_right = 85.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 23 )
+text = "Descrição: Utilizado para comprar o acesso a fase 2"
+autowrap = true
+
+[node name="Label2" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+margin_left = 6.0
+margin_top = 62.0
+margin_right = 46.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 24 )
+text = "Preço: 1000XP"
+
+[node name="Button3" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 215.0
+margin_top = 54.0
+margin_right = 302.0
+margin_bottom = 146.0
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+margin_left = 5.0
+margin_top = 6.0
+margin_right = 89.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 27 )
+text = "Nome: Fase2"
+
+[node name="Label2" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+margin_left = 5.0
+margin_top = 21.0
+margin_right = 85.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 28 )
+text = "Descrição: Utilizado para comprar o acesso a fase 3"
+autowrap = true
+
+[node name="Label3" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+margin_left = 5.0
+margin_top = 62.0
+margin_right = 70.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 29 )
+text = "Preço: 2000XP"
+
+[node name="Fechar" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 256.0
+margin_top = -4.0
+margin_right = 310.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 30 )
+custom_styles/hover = SubResource( 31 )
+custom_styles/pressed = SubResource( 31 )
+custom_styles/focus = SubResource( 31 )
+custom_styles/normal = SubResource( 32 )
+text = "Fechar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup5" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 94.0
+margin_top = 158.0
+margin_right = 183.0
+margin_bottom = 177.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup5"]
+margin_left = 19.0
+margin_right = 111.0
+margin_bottom = 41.0
+custom_fonts/font = SubResource( 14 )
+text = "Pressione G
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoMarket" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+position = Vector2( 160, 89.5 )
+scale = Vector2( 0.354348, 0.309091 )
+texture = ExtResource( 9 )
+
+[node name="Ambev" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+position = Vector2( 30, 14 )
+scale = Vector2( 0.125672, 0.114163 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 35.0
+margin_top = 43.0
+margin_right = 276.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 33 )
+text = "Qual a maior diversidade existente?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 254.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 34 )
+custom_styles/hover = SubResource( 35 )
+custom_styles/pressed = SubResource( 35 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/normal = SubResource( 36 )
+text = "CLOSE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 55.0
+margin_top = 72.0
+margin_right = 76.0
+margin_bottom = 91.0
+custom_fonts/font = SubResource( 37 )
+custom_styles/hover = SubResource( 38 )
+custom_styles/pressed = SubResource( 38 )
+custom_styles/focus = SubResource( 38 )
+custom_styles/normal = SubResource( 39 )
+text = "A"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup/Button2"]
+pause_mode = 2
+margin_left = 24.0
+margin_top = -2.0
+margin_right = 94.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 40 )
+text = "Answer 1"
+
+[node name="Button3" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 55.0
+margin_top = 96.0
+margin_right = 76.0
+margin_bottom = 116.0
+custom_fonts/font = SubResource( 41 )
+custom_styles/hover = SubResource( 42 )
+custom_styles/pressed = SubResource( 42 )
+custom_styles/focus = SubResource( 42 )
+custom_styles/normal = SubResource( 43 )
+text = "B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup/Button3"]
+pause_mode = 2
+margin_left = 25.0
+margin_top = -2.0
+margin_right = 98.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 44 )
+text = "Answer 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 55.0
+margin_top = 121.0
+margin_right = 76.0
+margin_bottom = 142.0
+custom_fonts/font = SubResource( 45 )
+custom_styles/hover = SubResource( 46 )
+custom_styles/pressed = SubResource( 46 )
+custom_styles/focus = SubResource( 46 )
+custom_styles/normal = SubResource( 47 )
+text = "C"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup/Button4"]
+pause_mode = 2
+margin_left = 26.0
+margin_top = -1.0
+margin_right = 98.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 48 )
+text = "Answer 3"
+
+[node name="marketMessage" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 56.0
+margin_top = 72.0
+margin_right = 196.0
+margin_bottom = 97.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/marketMessage"]
+margin_left = 1.0
+margin_top = 5.0
+margin_right = 122.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 49 )
+text = "Mensagem AQUI"
+align = 1
+valign = 1
+
+[node name="Vidas" type="Sprite" parent="Personagem/Camera"]
+
+[node name="Vida1" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -236, 129 )
+texture = ExtResource( 11 )
+
+[node name="Vida2" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -217, 129 )
+texture = ExtResource( 11 )
+
+[node name="Vida3" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -197, 129 )
+texture = ExtResource( 11 )
+
+[node name="Vida4" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -178, 128 )
+texture = ExtResource( 11 )
+
+[node name="Vida5" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -159, 128 )
+texture = ExtResource( 11 )
+
+[node name="VidaVazia" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -236, 129 )
+texture = ExtResource( 8 )
+
+[connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]

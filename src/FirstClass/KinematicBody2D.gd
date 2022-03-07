@@ -1,87 +1,56 @@
 extends KinematicBody2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var velocity = Vector2.ZERO
-var rapidez = 140
+var rapidez = 180
 onready var animacaoJogador = $AnimationPlayer
 
 func direita():
-	velocity.x = 2
-	animacaoJogador.play("correndo_para_direita")
+	animacaoJogador.play("correndo_para_esquerda") #Começa a animação para direita -- AnimationPlayer
 	
 func esquerda():
-	velocity.x = -2
-	animacaoJogador.play("correndo_para_esquerda")
+	animacaoJogador.play("correndo_para_direita") #Começa a animação para esquerda -- AnimationPlayer
 
 func baixo():
-	velocity.y = 2
-	animacaoJogador.play("correndo_para_baixo")
+	animacaoJogador.play("correndo_para_baixo") #Começa a animação para baixo -- AnimationPlayer
 
 func cima():
-	velocity.y = -2
-	animacaoJogador.play("correndo_para_cima")
+	animacaoJogador.play("correndo_para_cima") #Começa a animação para cima -- AnimationPlayer
 
 func _physics_process(_delta):
 	
 	var resultante = Vector2.ZERO
+	#Captura em vetor se ele está indo para esquerda ou direita (x) (-1 ou 1)
 	resultante.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	#Captura em vetor se ele está indo para cima ou baixo (y) (-1 ou 1)
 	resultante.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	#Retira o bug de vetores quando se somam vetor nos sentidos x e y
 	resultante = resultante.normalized()
 	
+
+	
+	#Chama a animação correta, referente ao lado que o personagem está se deslocando
 	if Input.get_action_strength("ui_right"):
-		animacaoJogador.play("correndo_para_direita")
+		direita()
 	elif Input.get_action_strength("ui_left"):
-		animacaoJogador.play("correndo_para_esquerda")
+		esquerda()
 	elif Input.get_action_strength("ui_up"):
-		animacaoJogador.play("correndo_para_cima")
+		cima()
 	elif Input.get_action_strength("ui_down"):
-		animacaoJogador.play("correndo_para_baixo")
+		baixo()
 	else:
+#		animacaoJogador.seek(0, true)
 		return
 	
 	if resultante != Vector2.ZERO:
+		#Serve para dar velocidade ao personagem, independentemente para que lado ele esteja andando
 		velocity = resultante * rapidez
 	else:
+		#Caso nenhuma tecla esteja sendo pressionada, o personagem se mantém parado
 		velocity = Vector2.ZERO
-	
-	
-	print(resultante)
-#	if Input.is_action_pressed('ui_right'):
-#		direita()
-#
-#	elif Input.is_action_pressed('ui_left'):
-#		esquerda()
-#
-#	else:
-#		velocity.x = 0
-#
-#	if Input.is_action_pressed('ui_down'):
-#		baixo()
-#
-#	elif Input.is_action_pressed('ui_up'):
-#		cima()
-#
-#	else:
-#		velocity.y = 0
-#
-#	if Input. is_action_pressed('ui_shift'):
-#		if Input.is_action_pressed('ui_right'):
-#			velocity.x = 5
-#			animacaoJogador.play("correndo para direita")
-#			if Input.is_action_pressed('ui_e'):
-#				animacaoJogador.play("bater")
-#		elif Input.is_action_pressed('ui_left'):
-#			velocity.x = -5
-#			animacaoJogador.play("correndo_para_esquerda")
-#			if Input.is_action_pressed('ui_e'):
-#				animacaoJogador.play("bater_esquerda")
 
 # HIT/BATER
 	if Input.is_action_pressed('ui_space'):
+		#Entede qual a animação estava sendo executada, para então conseguir executar a animação de correr para o lado correto
 		if animacaoJogador.current_animation == "correndo_para_baixo":
 			animacaoJogador.play("bater_baixo")
 		if animacaoJogador.current_animation == "correndo_para_cima":
@@ -93,14 +62,7 @@ func _physics_process(_delta):
 		if animacaoJogador.current_animation == "":
 			animacaoJogador.play("")
 		else: return
-		
-
-# warning-ignore:return_value_discarded
+	#Move o personagem com a velocity (atrelando resultante com a rapidez)
 	move_and_slide(velocity)
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.	
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

@@ -34,10 +34,19 @@
 <p align="center">
 
  
-https://user-images.githubusercontent.com/99296562/153513304-4cd84684-fea4-43fd-a3ee-4ed79a7d04d6.mp4
+<p>https://user-images.githubusercontent.com/99296562/155750079-15aacbca-947a-4fcb-9dd8-ea883e1019e2.mp4</p>
 
+
+<p align="center">
+ 
+ <p>https://user-images.githubusercontent.com/99296562/155750808-e459742e-1190-4394-86fd-92968a9c3fef.mp4</p>
 </p>
 
+
+<p align="center">
+ 
+ <p>https://user-images.githubusercontent.com/99296562/155751368-23460ed6-3b73-423c-9f26-282ae60c1bc8.mp4</p>
+ 
 
 💡 Nosso projeto se trata de um jogo que consiste na existência de 3 mundos, possuindo um mundo principal que dá acesso aos outros dois. Desse modo, tendo em vista que o jogo a ser desenvolvido trata-se de Diversidade e Inclusão, os dois mundos subsequentes ao oficial estarão relacionados, cada um, a uma diversidade social. Tendo a ideia exposta em mente, analisa-se que a melhor maneira de fazer um jogo de perguntas e respostas — como foi solicitado pelo cliente — é efetuar diversos minigames com o mesmo formato (contendo uma pergunta e, logo em seguida, 5 alternativas de resposta), sendo que em cada mundo os minigames serão relacionados à diversidade apresentada no mesmo. Além disso, é proposta a ideia de incluir no jogo um sistema de pontuação, no qual a cada minigame com resposta correta irá incrementar pontuação a conta do usuário. Assim, caso o cliente aceite um sistema de recompensas, o maior meio de atrair um maior número de usuários será através da troca de pontos por produtos fornecidos pelo cliente.
 <br><br>
@@ -131,8 +140,20 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
+* 0.0.8 - 03/03/2022
+  * Adicionado novo Menu para o game
+  * Personagem novo adicionado
+  * Corrigido sistema de pontos com relação ao mercado -- Se menor do que o mínimo = compra cancelada
+  * Sistema de portal com animação inovadora
+
+* 0.0.7 - 25/02/2022
+  * Adicionado novo cenário do mapa principal
+  * Personagem com nova posição de start
+  * Adicionada novas colisões
+  * Adicionado sistema de mercado
+
 * 0.0.6 - 18/02/2022
-  * |Camera centralizada no personagem
+  * Camera centralizada no personagem
   * Personagem com nova posição de start
   * Cenário recraido com tilemap
   * Tiles do cenário com cores alteradas
@@ -164,7 +185,7 @@ Coloque código do prompt de comnando se for necessário
 
 ## 📋 Licença/License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T1/Projeto1">DiveInc</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/pedro-hagge-baptista-95160b219, https://www.linkedin.com/in/abner-silva-barbosa-8a3542225, https://www.linkedin.com/in/amanda-fontes/, https://www.linkedin.com/in/liviapcoutinho/, https://www.linkedin.com/in/jo%C3%A3o-pedro-gon%C3%A7alves-carazzato-147120231/, https://www.linkedin.com/in/yves-levi-paix%C3%A3o-lapa-5a96b8161/">Pedro Hagge Baptista, Abner Silva Barbosa, Yves Levi Paixão Lapa, João Pedro Gonçalves Carazzato, Amanda Ribeiro Fontes, Livia Coutinho, Guilherme Costa, Felipe Campos</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T1/Projeto1">DiveMon</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkmenu.com.br/DiveInc">Pedro Hagge Baptista, Abner Silva Barbosa, Yves Levi Paixão Lapa, João Pedro Gonçalves Carazzato, Amanda Ribeiro Fontes, Livia Coutinho, Guilherme Costa, Felipe Campos</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 ## 🎓 Referências
 
@@ -173,3 +194,6 @@ Aqui estão as referências usadas no projeto.
 1. <https://github.com/iuricode/readme-template>
 2. <https://github.com/gabrieldejesus/readme-model>
 3. <https://creativecommons.org/share-your-work/>
+4. https://docs.godotengine.org/en/2.1/learning/step_by_step/simple_2d_game.html
+5. https://www.youtube.com/c/uheartbeast
+
