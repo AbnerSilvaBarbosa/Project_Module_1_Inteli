@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Mundo urbano.mp3-2e086262a6047283b726e877026b2b7d.mp3str"
+
+[deps]
+
+source_file="res://audios/Mundo urbano.mp3"
+dest_files=[ "res://.import/Mundo urbano.mp3-2e086262a6047283b726e877026b2b7d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,65 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá! Você está em \"FlappyBrahma\". Aqui, além de se divertir, você comprova que está aprendendo sobre diversidade e a importância de incluir grupos minoritários na sociedade."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Interessante. Mas não é um assunto que tenho paciência para aprender. Além disso, já tenho minhas convicções sobre certas características que vocês chamam de “diversidade”..."
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você está aqui justamente para se desfazer dela. Por que não aproveita essa oportunidade para abrir sua mente e aprender a ser um cidadão inclusivo?"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Acho que não tenho escolha, afinal."
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você não irá se arrepender, Eron."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Espero que não…"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para continuar nessa jornada, caro viajante, você deve jogar um pequeno jogo. Basta utilizar as setas para cima e para baixo para controlar o nosso Flappy Brahma!"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ao atingir dez pontos, você adquire pontos de experiência e comprova que está disposto a continuar aprendendo. Assim, você contribui para a nossa luta contra o preconceito, e ajuda as pessoas com doenças mentais a serem melhor tratadas no ambiente em que vivemos."
+		},
+		{
+			"change_scene": "res://FlappyBrahma.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648647650.json",
+		"name": "Minigame1"
+	}
+}

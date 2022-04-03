@@ -140,6 +140,44 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 🗃 Histórico de lançamentos
+* 0.1.3 - 01/04/2022
+  * Adicionado novos diálogos
+  * Adicionado Tutorial
+  * Adicionado versão mobile
+  * Adicionados guias que indicam os caminhos
+  * Adicionado sistema de troca de cor do primeiro mapa
+  * Corrigido bugs de .JSON
+  * Corrigido bug de guardar a informação de que o mercado já havia sido aberto
+  * Corrigido bugs nos dialógos (um se sobrepondo a outro)
+  * Corrigido bug de poder responder uma questão mais de uma vez
+
+* 0.1.2 - 25/03/2022
+  * Novo design do mercado
+  * Sistema de perguntas refatorado com dicas e feedback
+  * Novas Pixelart adicionadas do personagem
+  * Adicionada novo minigame - FlappyBrahma
+  * Adicionada novo minigame - Labirinto
+  
+
+
+* 0.1.1 - 18/03/2022
+  * Sistema para voltar o jogador proximo ao portal
+  * Cutscene adicionada no começo do jogo
+  * Dialogos de "Bem vindo" e Tuor no mercado
+
+* 0.1 - 11/03/2022
+  * Novo sistema de perguntas(refatorado) aplicado dentro da 1 Fase
+  * Adicionado base local de dados no sistema de perguntas
+  * Novos blocos de pixelart adicionados
+  * Mapa FASE-1 adicionado
+
+* 0.0.9 - 09/03/2022
+  * Adicionado novo sistema de perguntas - Aleatório
+  * Adicionado sistema de conversa com NPC
+  * Adicionada novas colisões
+  * Novo mapa - D&IMental
+  * Adicionado Banco de Dados local para o game
+
 * 0.0.8 - 03/03/2022
   * Adicionado novo Menu para o game
   * Personagem novo adicionado

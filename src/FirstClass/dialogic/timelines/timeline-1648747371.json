@@ -1,0 +1,73 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá, Eron. Por muito tempo esperei você aqui."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quem é você? O que estou fazendo aqui?"
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Eron, acalme-se. Você chegou ao seu destino e, aqui, sua vida será mudada."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Como será mudada? Eu fiz algo errado? Você ainda não me disse quem é…"
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tudo que tenho a dizer, Eron, é que você não tem sido um bom cidadão em sua sociedade."
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sei que você possui uma visão muito distorcida sobre pessoas diferentes de você — e, acredite em mim, isso está te prejudicando muito."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você certamente não me conhece. Deve ser somente um velho que está perdido por aqui e fica perturbando quem passa."
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mais respeito, Eron. Você está aqui para passar por uma jornada de aprendizado e transformação e, assim, se tornar um cidadão consciente e preparado para conviver com diferentes pessoas."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tenho minhas opiniões e não tenho nenhum interesse em mudá-las. Será que posso voltar para casa?"
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você só conseguirá sair daqui se estiver disposto a mudar sua mentalidade. Siga caminhando e, em breve, você encontrará um portal que irá te levar exatamente onde você deve chegar. Por agora, te desejo boa sorte nessa jornada — mesmo que você não tenha sido tão educado comigo. Nos encontraremos em breve!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648747371.json",
+		"name": "EronHistoria"
+	}
+}

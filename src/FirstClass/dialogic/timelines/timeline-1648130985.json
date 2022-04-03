@@ -1,0 +1,49 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1648132421.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vimos que é a sua primeira vez aqui!"
+		},
+		{
+			"character": "character-1648132421.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vamos então ao tour do nosso mercado!"
+		},
+		{
+			"character": "character-1648132421.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aqui você poderá comprar diversos itens que irão te ajudar na sua jornada"
+		},
+		{
+			"character": "character-1648132421.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A compra é fácil e rápida, apenas clique no item desejado, e caso tenha dinheiro, tudo será feito."
+		},
+		{
+			"character": "character-1648132421.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Se lembre, fazer a gerência da quantidade de experiencia que você possui é extremamente importante."
+		},
+		{
+			"character": "character-1648132421.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Boas compras!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648130985.json",
+		"name": "Mercado"
+	}
+}

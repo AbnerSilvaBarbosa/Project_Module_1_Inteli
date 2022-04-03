@@ -1,0 +1,167 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "O que é isso? Não é nada que eu tivesse imaginado antes... quem é você e por que esse mundo está preto e branco?"
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quem é você, pergunto eu. Nada aqui faz sentido. Estou trabalhando, se puder me dar licença."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Calma, me ajude, onde eu estou? Fui enviado para passar por uma espécie de jornada, na qual não tenho nenhum interesse. Me ajude a sair, por favor!"
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por que eu te ajudaria?"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Talvez haja alguma bondade em seu coração."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Há sim — nisso você tem razão. O ponto é que eu estou cheio de trabalho e não tenho mais tempo para nada... tenho que consertar esse mundo antes que a passagem para o mundo se feche."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Então quer dizer que a passagem por onde eu vim será fechada?"
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sim, em breve!"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vou voltar, então."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Não poderá. Você precisa ajudar os demais e, somente assim, você conseguirá voltar para o seu mundo de origem."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Certo."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Só um minuto..."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você veio de D&IMon"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sim, por quê?"
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nada, apenas me deu saudade daquele lugar... era menos caótico."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Esse lugar em que estou é ruim?"
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por enquanto, caro viajante, você irá me ajudar a consertá-lo."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Só se você me disser quem é."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ok. Se é isso que quer, é o que te contarei."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Há muito tempo, vivi num mundo completamente conturbado: sofri discriminações por conta da minha condição."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Espero que não se assuste, mas tenho esquizofrenia, então as pessoas me julgavam muito, me descredibilizando bastante."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por isso, decidi estudar profundamente as ciências naturais e tentar quebrar os preconceitos que me rodeavam. Infelizmente, ainda não alcancei esse feito..."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No entanto, fui trazido para esse mundo há algum tempo, então tento – com todas as minhas forças - mudar a realidade, para melhor, daqueles que se vêem em condições semelhantes às minhas."
+		},
+		{
+			"character": "character-1648647596.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Acho que já falei demais. Você deve cumprir sua função agora. Ajude as pessoas completando as fases que encontrará e, em breve, esse mundo ganhará cor."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Certo. Até mais."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648647510.json",
+		"name": "Cientista"
+	}
+}

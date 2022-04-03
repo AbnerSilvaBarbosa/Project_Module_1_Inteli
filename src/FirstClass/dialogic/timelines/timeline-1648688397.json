@@ -1,0 +1,143 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá! Você chegou ao \"D&IPong\". Aqui, você terá a chance de ajudar pessoas que possuem doenças mentais a viverem longe de preconceitos."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Como assim?"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Lembra-se que um cientista o trouxe para essa avenida?"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sim… por quê?"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Então… ela meio que funciona como o hall de entrada para os games."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Games?"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sim… você ainda não sabe?"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sei o quê?"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você veio a esse mundo para ajudar indivíduos com problemas de saúde mental a serem melhor incluídos no ambiente social."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah, sim…"
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Suponho que você também tenha alguma deficiência e veio contribuir com esse mundo para um lugar melhor, estou certo?"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "De certa forma, sim, mas a causa é um pouco mais nobre."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Se puder contar melhor, agradeço."
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "É que de onde eu venho pessoas que têm Transtorno Afetivo Bipolar costumam andar entre picos e vales e com intensas e repentinas alterações de humor…"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por causa disso é que fui discriminado. Na época eu trabalhava, mas pequenos erros que cometia tornavam os outros a jogarem na minha cara meus erros. Além disso, meus resultados positivos eram omitidos para que, na justificativa deles, pessoas com doenças mentais não fossem homenageadas."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entendi…"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bom, chega de histórias tristes, entre no jogo logo."
+		},
+		{
+			"character": "character-1648644541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Explique-me como ele funciona."
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Funciona como um jogo “gol-a-gol” em que você comanda o lado direito com a paleta rosa, movimente para cima e para baixo com o objetivo de acertar a bola quando ela vier em sua direção."
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Se você acertar a bolinha e o player em azul não, então você marcará um ponto."
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entre aqui e atinja 5 pontos para que você possa ajudar os demais membros da comunidade PCD."
+		},
+		{
+			"change_scene": "res://pong.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1648688397.json",
+		"name": "Minigame2"
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1647575712.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Seja muito bem-vindo ao mundo de D&IMon! Aqui, você irá se reconstruir e aprender a aceitar a todas, a todos."
+		},
+		{
+			"character": "character-1647575712.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Em D&IMon, você será desafiado a responder perguntas que irão lhe garantir um excelente aprendizado a respeito do assunto Diversidade e Inclusão."
+		},
+		{
+			"character": "character-1647575712.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Lembre-se: o erro é essencial. Você não perde nada caso erre alguma pergunta do quiz. No entanto, se acertá-lo, você ganhará pontos que, ao final, irão gerar uma recompensa."
+		},
+		{
+			"character": "character-1647575712.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Com pontos, através do mercado você pode adquirir acesso às fases mais avançadas do jogo."
+		},
+		{
+			"character": "character-1647575712.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Além disso, você pode comprar vidas que lhe permitirão jogar pequenos jogos. Esses jogos irão proporcionar a você momentos de muito entretenimento enquanto aprende sobre inclusão!"
+		},
+		{
+			"character": "character-1647575712.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você está preparado? Boa sorte!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1647574833.json",
+		"name": "Welcome"
+	}
+}

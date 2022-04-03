@@ -1,0 +1,1476 @@
+[gd_scene load_steps=100 format=2]
+
+[ext_resource path="res://Hey Comic.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fontes/ARCADEPI.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Jelly Anika.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Action RPG Resources/World/GrassBackground.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Color.gd" type="Script" id=5]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=6]
+[ext_resource path="res://Action RPG Resources/Texture/xp.png" type="Texture" id=7]
+[ext_resource path="res://Action RPG Resources/Texture/text.png" type="Texture" id=8]
+[ext_resource path="res://portal texture.png" type="Texture" id=9]
+[ext_resource path="res://Action RPG Resources/Texture/tips.png" type="Texture" id=10]
+[ext_resource path="res://Action RPG Resources/Tileset/aguaAnimada.tres" type="Texture" id=11]
+[ext_resource path="res://mercadinhoAbner.png" type="Texture" id=12]
+[ext_resource path="res://Action RPG Resources/Player/Pixilart Sprite Sheet.png" type="Texture" id=13]
+[ext_resource path="res://Action RPG Resources/Player/RpgCharacterShadow.png" type="Texture" id=14]
+[ext_resource path="res://Action RPG Resources/UI/HeartUIEmpty.png" type="Texture" id=15]
+[ext_resource path="res://fundoMarket.png" type="Texture" id=16]
+[ext_resource path="res://Action RPG Resources/Texture/ambev.png" type="Texture" id=17]
+[ext_resource path="res://Action RPG Resources/UI/HeartUIFull.png" type="Texture" id=18]
+[ext_resource path="res://pixil-frame-0.png" type="Texture" id=19]
+[ext_resource path="res://Action RPG Resources/World/tijolos.png" type="Texture" id=20]
+[ext_resource path="res://Action RPG Resources/World/Bush.png" type="Texture" id=21]
+[ext_resource path="res://Action RPG Resources/Texture/TX Plant.png" type="Texture" id=22]
+[ext_resource path="res://Action RPG Resources/World/DirtTileset.png" type="Texture" id=23]
+[ext_resource path="res://Scripts/Tutorial.gd" type="Script" id=24]
+[ext_resource path="res://pixil-frame-1.png" type="Texture" id=25]
+[ext_resource path="res://pixil-frame-3.png" type="Texture" id=26]
+[ext_resource path="res://pixil-frame-2.png" type="Texture" id=27]
+[ext_resource path="res://BarcoSprite/pixil-frame-12.png" type="Texture" id=28]
+[ext_resource path="res://pixil-frame-0 (9).png" type="Texture" id=29]
+[ext_resource path="res://pixil-frame-1 (6).png" type="Texture" id=30]
+[ext_resource path="res://BarcoSprite/pixil-frame-8.png" type="Texture" id=31]
+[ext_resource path="res://BarcoSprite/pixil-frame-11.png" type="Texture" id=32]
+[ext_resource path="res://BarcoSprite/pixil-frame-10.png" type="Texture" id=33]
+[ext_resource path="res://BarcoSprite/pixil-frame-9.png" type="Texture" id=34]
+
+[sub_resource type="TileSet" id=1]
+0/name = "GrassBackground.png 0"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "tijolos.png 1"
+1/texture = ExtResource( 20 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Bush.png 2"
+2/texture = ExtResource( 21 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 32, 32 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "TX Plant.png 3"
+3/texture = ExtResource( 22 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 16, 16, 128, 144 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "DirtTileset.png 4"
+4/texture = ExtResource( 23 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 144, 32, 32, 32 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "aguaAnimada.tres 5"
+5/texture = ExtResource( 11 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 5.5, 12.5 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( -11.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "bater_baixo"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 36, 37, 38, 39, 18 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "bater_cima"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 28, 29, 30, 31, 6 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "bater_direita"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 24, 25, 26, 27, 0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "bater_esquerda"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 32, 33, 34, 35, 12 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "correndo_para_baixo"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 6 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sombra:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "correndo_para_cima"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 9 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sombra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "correndo_para_direita"
+length = 0.65
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sombra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "correndo_para_esquerda"
+length = 0.55
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sombra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ), Vector2( 36, 34 ), Vector2( 36, 33 ) ]
+}
+
+[sub_resource type="GDScript" id=12]
+script/source = "extends Camera2D
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
+
+[sub_resource type="DynamicFont" id=13]
+size = 17
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0, 0.576471, 1, 1 )
+border_color = Color( 0.270588, 0.247059, 0.247059, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=19]
+size = 12
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 7
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 12
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=23]
+size = 7
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 12
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=25]
+resource_name = "Nova Animação"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=26]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0, 0.576471, 1, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=29]
+size = 12
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=30]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=31]
+size = 12
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=32]
+resource_name = "Nova Animação"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=33]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+
+[sub_resource type="DynamicFont" id=34]
+size = 18
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=35]
+bg_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0, 0.576471, 1, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="DynamicFont" id=37]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=38]
+size = 13
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id=40]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="DynamicFont" id=41]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=44]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=45]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=48]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=49]
+size = 14
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=50]
+bg_color = Color( 0.992157, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=51]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=52]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=53]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=54]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="TileSet" id=56]
+0/name = "TX Plant.png 0"
+0/texture = ExtResource( 22 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 16, 16, 128, 144 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=55]
+extents = Vector2( 287, 56.125 )
+
+[sub_resource type="RectangleShape2D" id=57]
+extents = Vector2( 37, 157 )
+
+[sub_resource type="RectangleShape2D" id=58]
+extents = Vector2( 476.25, 15 )
+
+[sub_resource type="Animation" id=59]
+resource_name = "Movimentação"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Personagem:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -276, 33 ), Vector2( -168, 43 ), Vector2( -43, 61 ), Vector2( 73, 77 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Personagem/Camera:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, true ]
+}
+
+[sub_resource type="Animation" id=60]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Personagem:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 28, 131 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Personagem/Camera:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="DynamicFont" id=61]
+font_data = ExtResource( 3 )
+
+[sub_resource type="SpriteFrames" id=65]
+animations = [ {
+"frames": [ ExtResource( 31 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 32 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=62]
+extents = Vector2( 32, 27.5 )
+
+[sub_resource type="Animation" id=64]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 687, 127 ) ]
+}
+
+[sub_resource type="Animation" id=63]
+resource_name = "finaltutorial"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Personagem:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera2D:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 592, 131 ), Vector2( 687, 127 ), Vector2( 872, 127 ) ]
+}
+
+[node name="Tutorial" type="Node2D"]
+script = ExtResource( 24 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -720918, 0, 0, -720915, 0, 0, -720911, 0, 0, -720907, 0, 0, -720903, 0, 0, -720899, 0, 0, -786431, 0, 0, -786427, 0, 0, -786423, 0, 0, -786419, 0, 0, -786416, 0, 0, -786412, 0, 0, -786408, 0, 0, -655382, 0, 0, -655332, 5, 0, -655328, 5, 0, -655324, 5, 0, -655320, 5, 0, -655316, 5, 0, -458771, 0, 0, -458767, 0, 0, -458763, 0, 0, -458759, 0, 0, -458755, 0, 0, -524287, 0, 0, -524283, 0, 0, -524279, 0, 0, -524275, 0, 0, -524271, 0, 0, -524267, 0, 0, -524264, 0, 0, -393238, 0, 0, -327695, 0, 0, -327691, 0, 0, -327687, 0, 0, -393188, 5, 0, -393184, 5, 0, -393180, 5, 0, -393176, 5, 0, -393172, 5, 0, -196627, 0, 0, -196615, 0, 0, -196612, 0, 0, -262144, 0, 0, -262140, 0, 0, -262136, 0, 0, -262132, 0, 0, -262128, 0, 0, -262124, 0, 0, -262120, 0, 0, -131094, 0, 0, -131045, 4, 0, -131043, 4, 0, -131041, 4, 0, -131039, 4, 0, -131037, 4, 0, -131036, 5, 0, -131032, 5, 0, -131028, 5, 0, 65517, 0, 0, 65532, 0, 0, 0, 1, 0, 4, 1, 0, 8, 1, 0, 12, 1, 0, 16, 1, 0, 20, 0, 0, 24, 0, 0, 25, 4, 0, 28, 4, 0, 30, 4, 0, 32, 4, 0, 34, 4, 0, 131050, 0, 0, 65536, 1, 0, 65540, 1, 0, 65576, 5, 0, 131100, 4, 0, 131102, 4, 0, 131104, 4, 0, 131106, 4, 0, 131108, 5, 0, 131116, 5, 0, 327661, 0, 0, 327676, 0, 0, 262152, 1, 0, 262156, 1, 0, 262160, 1, 0, 262164, 0, 0, 262168, 0, 0, 262170, 4, 0, 262172, 4, 0, 262174, 4, 0, 262176, 4, 0, 262178, 4, 0, 393194, 0, 0, 327680, 0, 0, 327684, 0, 0, 327688, 0, 0, 327692, 0, 0, 327696, 0, 0, 327720, 5, 0, 393244, 4, 0, 393246, 4, 0, 393248, 4, 0, 393250, 4, 0, 393252, 5, 0, 393260, 5, 0, 589805, 0, 0, 589820, 0, 0, 524288, 0, 0, 524292, 0, 0, 524296, 0, 0, 524300, 0, 0, 524304, 0, 0, 524308, 0, 0, 524312, 0, 0, 524316, 4, 0, 524318, 4, 0, 524320, 4, 0, 524322, 4, 0, 655338, 0, 0, 589850, 4, 0, 589852, 4, 0, 589864, 5, 0, 720889, 3, 0, 655388, 4, 0, 655390, 4, 0, 655392, 4, 0, 655394, 4, 0, 655396, 5, 0, 655404, 5, 0, 720924, 4, 0, 851948, 0, 0, 851964, 0, 0, 786432, 0, 0, 786436, 0, 0, 786440, 0, 0, 786444, 0, 0, 786448, 0, 0, 786452, 0, 0, 786456, 0, 0, 786462, 4, 0, 786464, 4, 0, 786466, 4, 0, 917482, 0, 0, 917488, 0, 0, 917492, 0, 0, 917496, 0, 0, 851996, 4, 0, 852008, 5, 0, 852012, 5, 0, 917534, 4, 0, 917536, 4, 0, 917538, 4, 0, 917540, 5, 0, 983066, 4, 0, 983068, 4, 0, 1114090, 0, 0, 1114094, 0, 0, 1114096, 0, 0, 1114100, 0, 0, 1114104, 0, 0, 1114108, 0, 0, 1048576, 0, 0, 1048580, 0, 0, 1048584, 0, 0, 1048588, 0, 0, 1048592, 0, 0, 1048596, 0, 0, 1048600, 0, 0, 1048606, 4, 0, 1048608, 4, 0, 1048610, 4, 0, 1114138, 4, 0, 1114140, 4, 0, 1114152, 5, 0, 1114156, 5, 0, 1179676, 4, 0, 1179678, 4, 0, 1179680, 4, 0, 1179682, 4, 0, 1179684, 5, 0, 1376234, 0, 0, 1376238, 0, 0, 1376240, 0, 0, 1376242, 0, 0, 1376246, 0, 0, 1376250, 0, 0, 1376254, 0, 0, 1310722, 0, 0, 1310726, 0, 0, 1310729, 0, 0, 1310732, 0, 0, 1310736, 0, 0, 1310740, 0, 0, 1310744, 0, 0, 1310748, 5, 0, 1310752, 5, 0, 1310756, 5, 0, 1310760, 5, 0, 1310764, 5, 0, 1441820, 5, 0, 1441824, 5, 0, 1441827, 5, 0, 1441831, 5, 0, 1441835, 5, 0, 1441836, 5, 0, 1703964, 5, 0, 1703968, 5, 0, 1703972, 5, 0, 1703976, 5, 0, 1703980, 5, 0, 1966108, 5, 0, 1966112, 5, 0, 1966116, 5, 0, 1966120, 5, 0, 1966124, 5, 0 )
+
+[node name="Personagem" type="KinematicBody2D" parent="."]
+position = Vector2( 28, 131 )
+script = ExtResource( 6 )
+
+[node name="Sombra" type="Sprite" parent="Personagem"]
+position = Vector2( 36, 34 )
+scale = Vector2( 1.1875, 1 )
+texture = ExtResource( 14 )
+
+[node name="Sprite" type="Sprite" parent="Personagem"]
+position = Vector2( 36, 34 )
+texture = ExtResource( 13 )
+hframes = 12
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem"]
+position = Vector2( 36.4999, 51.5 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Personagem"]
+anims/RESET = SubResource( 3 )
+anims/bater_baixo = SubResource( 4 )
+anims/bater_cima = SubResource( 5 )
+anims/bater_direita = SubResource( 6 )
+anims/bater_esquerda = SubResource( 7 )
+anims/correndo_para_baixo = SubResource( 8 )
+anims/correndo_para_cima = SubResource( 9 )
+anims/correndo_para_direita = SubResource( 10 )
+anims/correndo_para_esquerda = SubResource( 11 )
+
+[node name="Camera" type="Camera2D" parent="Personagem"]
+visible = false
+position = Vector2( 36, 37 )
+current = true
+zoom = Vector2( 1.4, 1.4 )
+limit_smoothed = true
+script = SubResource( 12 )
+
+[node name="Xp" type="Sprite" parent="Personagem/Camera"]
+position = Vector2( 201.455, -121.5 )
+scale = Vector2( 0.668187, 0.79 )
+texture = ExtResource( 7 )
+
+[node name="Pontos" type="Label" parent="Personagem/Camera"]
+pause_mode = 2
+margin_left = 172.0
+margin_top = -138.0
+margin_right = 249.0
+margin_bottom = -103.0
+custom_fonts/font = SubResource( 13 )
+text = "10000"
+align = 2
+valign = 1
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text_color = Color( 0.298039, 0.988235, 0.956863, 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Personagem/Camera"]
+
+[node name="Popups" type="Popup" parent="Personagem/Camera/CanvasLayer"]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup3" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup3"]
+margin_left = 115.0
+margin_top = 157.0
+margin_right = 207.0
+margin_bottom = 198.0
+custom_fonts/font = SubResource( 14 )
+text = "Pressione M
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup2" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+pause_mode = 2
+margin_left = 111.0
+margin_top = 61.0
+margin_right = 215.0
+margin_bottom = 101.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoMarket" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup2"]
+position = Vector2( 49, 29 )
+scale = Vector2( 0.356522, 0.310744 )
+texture = ExtResource( 16 )
+
+[node name="Ambev" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup2"]
+position = Vector2( 178, -46 )
+scale = Vector2( 0.125672, 0.114163 )
+texture = ExtResource( 17 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup2"]
+pause_mode = 2
+margin_right = 98.0
+margin_bottom = 45.0
+custom_fonts/font = SubResource( 15 )
+text = "Errou"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup4" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 94.0
+margin_top = 158.0
+margin_right = 183.0
+margin_bottom = 177.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup4"]
+margin_left = 19.0
+margin_right = 111.0
+margin_bottom = 41.0
+custom_fonts/font = SubResource( 14 )
+text = "Pressione E
+"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mercado" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 4.0
+margin_top = 8.0
+margin_right = 315.0
+margin_bottom = 164.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoMarket" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+position = Vector2( 156.5, 82.5 )
+scale = Vector2( 0.501563, 0.464103 )
+texture = ExtResource( 12 )
+
+[node name="Ambev" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+position = Vector2( 24, 7 )
+scale = Vector2( 0.125672, 0.114163 )
+texture = ExtResource( 17 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 25.0
+margin_top = -4.0
+margin_right = 276.0
+margin_bottom = 18.0
+custom_fonts/font = SubResource( 16 )
+text = "Seja bem-vindo(a) ao Mercado!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 7.0
+margin_top = 21.0
+margin_right = 93.0
+margin_bottom = 90.0
+custom_styles/hover = SubResource( 17 )
+custom_styles/pressed = SubResource( 17 )
+custom_styles/focus = SubResource( 17 )
+custom_styles/normal = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+margin_left = 63.0
+margin_top = 1.0
+margin_right = 138.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 19 )
+text = "Vida"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+margin_left = 7.0
+margin_top = 25.0
+margin_right = 77.0
+margin_bottom = 78.0
+custom_fonts/font = SubResource( 20 )
+text = "Vidas são utilizadas para conversar com os NPCs"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+margin_left = 11.0
+margin_top = 51.0
+margin_right = 74.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 21 )
+text = "1000XP"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button"]
+position = Vector2( 15, 9 )
+texture = ExtResource( 18 )
+
+[node name="Button2" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 113.0
+margin_top = 22.0
+margin_right = 200.0
+margin_bottom = 93.0
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 22 )
+custom_styles/focus = SubResource( 22 )
+custom_styles/normal = SubResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+margin_left = 28.0
+margin_top = 3.0
+margin_right = 81.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 19 )
+text = "Fase1"
+align = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+margin_left = 3.0
+margin_top = 23.0
+margin_right = 82.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 23 )
+text = "Utilizado para comprar o acesso a fase 2"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+margin_left = 25.0
+margin_top = 51.0
+margin_right = 65.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 24 )
+text = "1000XP"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2"]
+position = Vector2( 13, 11 )
+scale = Vector2( 0.08875, 0.034838 )
+texture = ExtResource( 9 )
+hframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button2/Sprite"]
+autoplay = "Nova Animação"
+"anims/Nova Animação" = SubResource( 25 )
+anims/RESET = SubResource( 26 )
+
+[node name="Button3" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 216.0
+margin_top = 22.0
+margin_right = 309.0
+margin_bottom = 95.0
+custom_styles/hover = SubResource( 27 )
+custom_styles/pressed = SubResource( 27 )
+custom_styles/focus = SubResource( 27 )
+custom_styles/normal = SubResource( 28 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 89.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 29 )
+text = "Fase2"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+margin_left = 6.0
+margin_top = 25.0
+margin_right = 86.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 30 )
+text = "Utilizado para comprar o acesso a fase 3"
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+margin_left = 16.0
+margin_top = 53.0
+margin_right = 81.0
+margin_bottom = 67.0
+custom_fonts/font = SubResource( 31 )
+text = "2000XP"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3"]
+modulate = Color( 0.682353, 0.337255, 0.941176, 1 )
+position = Vector2( 12.0078, 11 )
+scale = Vector2( 0.0799305, 0.034838 )
+texture = ExtResource( 9 )
+hframes = 4
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Personagem/Camera/CanvasLayer/Popups/Mercado/Button3/Sprite"]
+autoplay = "Nova Animação"
+"anims/Nova Animação" = SubResource( 32 )
+anims/RESET = SubResource( 33 )
+
+[node name="Fechar" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Mercado"]
+margin_left = 255.0
+margin_top = -6.0
+margin_right = 305.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 34 )
+custom_styles/hover = SubResource( 35 )
+custom_styles/pressed = SubResource( 35 )
+custom_styles/focus = SubResource( 35 )
+custom_styles/normal = SubResource( 36 )
+text = "Fechar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup5" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 94.0
+margin_top = 158.0
+margin_right = 183.0
+margin_bottom = 177.0
+
+[node name="Sprite" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup5"]
+position = Vector2( 63, 6 )
+scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 8 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup5"]
+margin_left = 19.0
+margin_right = 111.0
+margin_bottom = 41.0
+rect_scale = Vector2( 1, 0.686656 )
+custom_fonts/font = SubResource( 14 )
+text = "Pressione G
+"
+align = 1
+valign = 1
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text_color = Color( 0.298039, 0.988235, 0.956863, 1 )
+
+[node name="Popup" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FundoMarket" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+position = Vector2( 160, 89.5 )
+scale = Vector2( 0.354348, 0.309091 )
+texture = ExtResource( 16 )
+
+[node name="Ambev" type="Sprite" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+position = Vector2( 30, 14 )
+scale = Vector2( 0.125672, 0.114163 )
+texture = ExtResource( 17 )
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 35.0
+margin_top = 43.0
+margin_right = 276.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 37 )
+text = "Qual a maior diversidade existente?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 254.0
+margin_top = 8.0
+margin_right = 302.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 38 )
+custom_styles/hover = SubResource( 39 )
+custom_styles/pressed = SubResource( 39 )
+custom_styles/focus = SubResource( 39 )
+custom_styles/normal = SubResource( 40 )
+text = "CLOSE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 55.0
+margin_top = 72.0
+margin_right = 76.0
+margin_bottom = 91.0
+custom_fonts/font = SubResource( 41 )
+custom_styles/hover = SubResource( 42 )
+custom_styles/pressed = SubResource( 42 )
+custom_styles/focus = SubResource( 42 )
+custom_styles/normal = SubResource( 43 )
+text = "A"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup/Button2"]
+pause_mode = 2
+margin_left = 24.0
+margin_top = -2.0
+margin_right = 94.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 44 )
+text = "Answer 1"
+
+[node name="Button3" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 55.0
+margin_top = 96.0
+margin_right = 76.0
+margin_bottom = 116.0
+custom_fonts/font = SubResource( 45 )
+custom_styles/hover = SubResource( 46 )
+custom_styles/pressed = SubResource( 46 )
+custom_styles/focus = SubResource( 46 )
+custom_styles/normal = SubResource( 47 )
+text = "B"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup/Button3"]
+pause_mode = 2
+margin_left = 25.0
+margin_top = -2.0
+margin_right = 98.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 48 )
+text = "Answer 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="Personagem/Camera/CanvasLayer/Popups/Popup"]
+pause_mode = 2
+margin_left = 55.0
+margin_top = 121.0
+margin_right = 76.0
+margin_bottom = 142.0
+custom_fonts/font = SubResource( 49 )
+custom_styles/hover = SubResource( 50 )
+custom_styles/pressed = SubResource( 50 )
+custom_styles/focus = SubResource( 50 )
+custom_styles/normal = SubResource( 51 )
+text = "C"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/Popup/Button4"]
+pause_mode = 2
+margin_left = 26.0
+margin_top = -1.0
+margin_right = 98.0
+margin_bottom = 21.0
+custom_fonts/font = SubResource( 52 )
+text = "Answer 3"
+
+[node name="marketMessage" type="Popup" parent="Personagem/Camera/CanvasLayer/Popups"]
+margin_left = 56.0
+margin_top = 72.0
+margin_right = 196.0
+margin_bottom = 97.0
+
+[node name="Label" type="Label" parent="Personagem/Camera/CanvasLayer/Popups/marketMessage"]
+margin_left = 1.0
+margin_top = 5.0
+margin_right = 122.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 53 )
+text = "Mensagem AQUI"
+align = 1
+valign = 1
+
+[node name="Vidas" type="Sprite" parent="Personagem/Camera"]
+
+[node name="Vida1" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -236, 129 )
+texture = ExtResource( 18 )
+
+[node name="Vida2" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -217, 129 )
+texture = ExtResource( 18 )
+
+[node name="Vida3" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -197, 129 )
+texture = ExtResource( 18 )
+
+[node name="Vida4" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -178, 128 )
+texture = ExtResource( 18 )
+
+[node name="Vida5" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -159, 128 )
+texture = ExtResource( 18 )
+
+[node name="VidaVazia" type="Sprite" parent="Personagem/Camera/Vidas"]
+position = Vector2( -236, 129 )
+texture = ExtResource( 15 )
+
+[node name="Tips" type="Sprite" parent="Personagem/Camera"]
+visible = false
+position = Vector2( 153.5, -32.5 )
+scale = Vector2( 0.713333, 0.7 )
+texture = ExtResource( 10 )
+
+[node name="Label" type="Label" parent="Personagem/Camera"]
+visible = false
+margin_left = 117.5
+margin_top = -43.5
+margin_right = 190.5
+margin_bottom = -4.5
+custom_fonts/font = SubResource( 54 )
+text = "Teste"
+align = 1
+valign = 1
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+text_color = Color( 0.290196, 1, 1, 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Personagem/Camera"]
+position = Vector2( -1, -16 )
+autoplay = true
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource( 56 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -589829, 0, 0, -589826, 0, 0, -655357, 0, 0, -655348, 0, 0, -589824, 0, 0, -589819, 0, 0, -589815, 0, 0, -589809, 0, 0, -589806, 0, 0, -589804, 0, 0, -589801, 0, 0, -262158, 0, 0, -262153, 0, 0, -131090, 0, 0, 65523, 0, 0, 65527, 0, 0, 196590, 0, 0, 327666, 0, 0, 327671, 0, 0, 458743, 0, 0, 524270, 0, 0, 589810, 0, 0, 589815, 0, 0, 655356, 0, 0, 589826, 0, 0, 589831, 0, 0, 589841, 0, 0, 655360, 0, 0, 655365, 0, 0, 655372, 0, 0, 720912, 0, 0, 720915, 0, 0, 720918, 0, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 289, 51.875 )
+shape = SubResource( 55 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -39, 130 )
+shape = SubResource( 57 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 380.5, 269 )
+shape = SubResource( 58 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 402, -42 )
+shape = SubResource( 58 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Movimentação" = SubResource( 59 )
+anims/RESET = SubResource( 60 )
+
+[node name="Pixil-frame-0" type="Sprite" parent="."]
+position = Vector2( 72, 53 )
+texture = ExtResource( 19 )
+
+[node name="Pixil-frame-1" type="Sprite" parent="."]
+position = Vector2( 72, 22 )
+texture = ExtResource( 25 )
+
+[node name="Pixil-frame-2" type="Sprite" parent="."]
+position = Vector2( 104, 53 )
+texture = ExtResource( 27 )
+
+[node name="Pixil-frame-3" type="Sprite" parent="."]
+position = Vector2( 40, 53 )
+texture = ExtResource( 26 )
+
+[node name="Pixil-frame-0(9)" type="Sprite" parent="."]
+position = Vector2( 194, 40 )
+texture = ExtResource( 29 )
+
+[node name="Pixil-frame-1(6)" type="Sprite" parent="."]
+position = Vector2( 252, 39 )
+texture = ExtResource( 30 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 187.0
+margin_top = 60.0
+margin_right = 274.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 61 )
+text = "Abrir dealogo"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 687, 127 )
+scale = Vector2( 2.78125, 2.44531 )
+frames = SubResource( 65 )
+frame = 2
+playing = true
+
+[node name="AnimaçãoTutorial" type="Area2D" parent="."]
+position = Vector2( 507, 138 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimaçãoTutorial"]
+position = Vector2( 39, 1.5 )
+shape = SubResource( 62 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 64 )
+anims/finaltutorial = SubResource( 63 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 602, 122 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
+[connection signal="animation_started" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_started"]
+[connection signal="body_entered" from="AnimaçãoTutorial" to="." method="_on_AnimaoTutorial_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer2" to="." method="_on_AnimationPlayer2_animation_finished"]
