@@ -56,11 +56,11 @@ func _physics_process(_delta):
 			resultante.y = 1
 			baixo()
 		elif (buttonPressed == 'Esquerda'):
-			resultante.x = -1
-			esquerda()
-		elif (buttonPressed == 'Direita'):
 			resultante.x = 1
 			direita()
+		elif (buttonPressed == 'Direita'):
+			resultante.x = -1
+			esquerda()
 	
 	#Verificar a velocidade e dá-la se for necessário.
 	if resultante != Vector2.ZERO:

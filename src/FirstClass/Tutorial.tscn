@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://Hey Comic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Fontes/ARCADEPI.TTF" type="DynamicFontData" id=2]
@@ -27,13 +27,18 @@
 [ext_resource path="res://pixil-frame-1.png" type="Texture" id=25]
 [ext_resource path="res://pixil-frame-3.png" type="Texture" id=26]
 [ext_resource path="res://pixil-frame-2.png" type="Texture" id=27]
-[ext_resource path="res://BarcoSprite/pixil-frame-12.png" type="Texture" id=28]
+[ext_resource path="res://Action RPG Resources/Texture/pixil-frame-1 (3).png" type="Texture" id=28]
 [ext_resource path="res://pixil-frame-0 (9).png" type="Texture" id=29]
 [ext_resource path="res://pixil-frame-1 (6).png" type="Texture" id=30]
-[ext_resource path="res://BarcoSprite/pixil-frame-8.png" type="Texture" id=31]
-[ext_resource path="res://BarcoSprite/pixil-frame-11.png" type="Texture" id=32]
-[ext_resource path="res://BarcoSprite/pixil-frame-10.png" type="Texture" id=33]
-[ext_resource path="res://BarcoSprite/pixil-frame-9.png" type="Texture" id=34]
+[ext_resource path="res://Action RPG Resources/Texture/pixil-frame-1 (2).png" type="Texture" id=31]
+[ext_resource path="res://Action RPG Resources/Texture/Baixo.png" type="Texture" id=35]
+[ext_resource path="res://Action RPG Resources/Texture/DireitaON.png" type="Texture" id=36]
+[ext_resource path="res://Action RPG Resources/Texture/Esquerda.png" type="Texture" id=37]
+[ext_resource path="res://Action RPG Resources/Texture/Direita.png" type="Texture" id=38]
+[ext_resource path="res://Action RPG Resources/Texture/baixoON.png" type="Texture" id=39]
+[ext_resource path="res://Action RPG Resources/Texture/esquerdaON.png" type="Texture" id=40]
+[ext_resource path="res://Action RPG Resources/Texture/cimaON.png" type="Texture" id=41]
+[ext_resource path="res://Action RPG Resources/Texture/Cima.png" type="Texture" id=42]
 
 [sub_resource type="TileSet" id=1]
 0/name = "GrassBackground.png 0"
@@ -120,6 +125,155 @@
 5/shape_one_way_margin = 0.0
 5/shapes = [  ]
 5/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=55]
+extents = Vector2( 287, 56.125 )
+
+[sub_resource type="RectangleShape2D" id=57]
+extents = Vector2( 37, 157 )
+
+[sub_resource type="RectangleShape2D" id=58]
+extents = Vector2( 476.25, 15 )
+
+[sub_resource type="Animation" id=59]
+resource_name = "Movimentação"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Personagem:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -276, 33 ), Vector2( -168, 43 ), Vector2( -43, 61 ), Vector2( 73, 77 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Personagem/Camera:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, true ]
+}
+
+[sub_resource type="Animation" id=60]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Personagem:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 28, 131 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Personagem/Camera:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="DynamicFont" id=61]
+font_data = ExtResource( 3 )
+
+[sub_resource type="SpriteFrames" id=65]
+animations = [ {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 31 ) ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=62]
+extents = Vector2( 32, 27.5 )
+
+[sub_resource type="Animation" id=64]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 687, 127 ) ]
+}
+
+[sub_resource type="Animation" id=63]
+resource_name = "finaltutorial"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Personagem:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera2D:current")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 592, 131 ), Vector2( 687, 127 ), Vector2( 872, 127 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimatedSprite:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "New Anim" ]
+}
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 5.5, 12.5 )
@@ -657,138 +811,6 @@ font_data = ExtResource( 3 )
 0/shapes = [  ]
 0/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=55]
-extents = Vector2( 287, 56.125 )
-
-[sub_resource type="RectangleShape2D" id=57]
-extents = Vector2( 37, 157 )
-
-[sub_resource type="RectangleShape2D" id=58]
-extents = Vector2( 476.25, 15 )
-
-[sub_resource type="Animation" id=59]
-resource_name = "Movimentação"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/path = NodePath("Personagem:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( -276, 33 ), Vector2( -168, 43 ), Vector2( -43, 61 ), Vector2( 73, 77 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Personagem/Camera:current")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 1.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ true, true ]
-}
-
-[sub_resource type="Animation" id=60]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("Personagem:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 28, 131 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Personagem/Camera:current")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ true ]
-}
-
-[sub_resource type="DynamicFont" id=61]
-font_data = ExtResource( 3 )
-
-[sub_resource type="SpriteFrames" id=65]
-animations = [ {
-"frames": [ ExtResource( 31 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 32 ), ExtResource( 28 ) ],
-"loop": true,
-"name": "default",
-"speed": 10.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=62]
-extents = Vector2( 32, 27.5 )
-
-[sub_resource type="Animation" id=64]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 687, 127 ) ]
-}
-
-[sub_resource type="Animation" id=63]
-resource_name = "finaltutorial"
-tracks/0/type = "value"
-tracks/0/path = NodePath("Personagem:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Camera2D:current")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("AnimatedSprite:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5, 1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 592, 131 ), Vector2( 687, 127 ), Vector2( 872, 127 ) ]
-}
-
 [node name="Tutorial" type="Node2D"]
 script = ExtResource( 24 )
 
@@ -797,6 +819,84 @@ tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -720918, 0, 0, -720915, 0, 0, -720911, 0, 0, -720907, 0, 0, -720903, 0, 0, -720899, 0, 0, -786431, 0, 0, -786427, 0, 0, -786423, 0, 0, -786419, 0, 0, -786416, 0, 0, -786412, 0, 0, -786408, 0, 0, -655382, 0, 0, -655332, 5, 0, -655328, 5, 0, -655324, 5, 0, -655320, 5, 0, -655316, 5, 0, -458771, 0, 0, -458767, 0, 0, -458763, 0, 0, -458759, 0, 0, -458755, 0, 0, -524287, 0, 0, -524283, 0, 0, -524279, 0, 0, -524275, 0, 0, -524271, 0, 0, -524267, 0, 0, -524264, 0, 0, -393238, 0, 0, -327695, 0, 0, -327691, 0, 0, -327687, 0, 0, -393188, 5, 0, -393184, 5, 0, -393180, 5, 0, -393176, 5, 0, -393172, 5, 0, -196627, 0, 0, -196615, 0, 0, -196612, 0, 0, -262144, 0, 0, -262140, 0, 0, -262136, 0, 0, -262132, 0, 0, -262128, 0, 0, -262124, 0, 0, -262120, 0, 0, -131094, 0, 0, -131045, 4, 0, -131043, 4, 0, -131041, 4, 0, -131039, 4, 0, -131037, 4, 0, -131036, 5, 0, -131032, 5, 0, -131028, 5, 0, 65517, 0, 0, 65532, 0, 0, 0, 1, 0, 4, 1, 0, 8, 1, 0, 12, 1, 0, 16, 1, 0, 20, 0, 0, 24, 0, 0, 25, 4, 0, 28, 4, 0, 30, 4, 0, 32, 4, 0, 34, 4, 0, 131050, 0, 0, 65536, 1, 0, 65540, 1, 0, 65576, 5, 0, 131100, 4, 0, 131102, 4, 0, 131104, 4, 0, 131106, 4, 0, 131108, 5, 0, 131116, 5, 0, 327661, 0, 0, 327676, 0, 0, 262152, 1, 0, 262156, 1, 0, 262160, 1, 0, 262164, 0, 0, 262168, 0, 0, 262170, 4, 0, 262172, 4, 0, 262174, 4, 0, 262176, 4, 0, 262178, 4, 0, 393194, 0, 0, 327680, 0, 0, 327684, 0, 0, 327688, 0, 0, 327692, 0, 0, 327696, 0, 0, 327720, 5, 0, 393244, 4, 0, 393246, 4, 0, 393248, 4, 0, 393250, 4, 0, 393252, 5, 0, 393260, 5, 0, 589805, 0, 0, 589820, 0, 0, 524288, 0, 0, 524292, 0, 0, 524296, 0, 0, 524300, 0, 0, 524304, 0, 0, 524308, 0, 0, 524312, 0, 0, 524316, 4, 0, 524318, 4, 0, 524320, 4, 0, 524322, 4, 0, 655338, 0, 0, 589850, 4, 0, 589852, 4, 0, 589864, 5, 0, 720889, 3, 0, 655388, 4, 0, 655390, 4, 0, 655392, 4, 0, 655394, 4, 0, 655396, 5, 0, 655404, 5, 0, 720924, 4, 0, 851948, 0, 0, 851964, 0, 0, 786432, 0, 0, 786436, 0, 0, 786440, 0, 0, 786444, 0, 0, 786448, 0, 0, 786452, 0, 0, 786456, 0, 0, 786462, 4, 0, 786464, 4, 0, 786466, 4, 0, 917482, 0, 0, 917488, 0, 0, 917492, 0, 0, 917496, 0, 0, 851996, 4, 0, 852008, 5, 0, 852012, 5, 0, 917534, 4, 0, 917536, 4, 0, 917538, 4, 0, 917540, 5, 0, 983066, 4, 0, 983068, 4, 0, 1114090, 0, 0, 1114094, 0, 0, 1114096, 0, 0, 1114100, 0, 0, 1114104, 0, 0, 1114108, 0, 0, 1048576, 0, 0, 1048580, 0, 0, 1048584, 0, 0, 1048588, 0, 0, 1048592, 0, 0, 1048596, 0, 0, 1048600, 0, 0, 1048606, 4, 0, 1048608, 4, 0, 1048610, 4, 0, 1114138, 4, 0, 1114140, 4, 0, 1114152, 5, 0, 1114156, 5, 0, 1179676, 4, 0, 1179678, 4, 0, 1179680, 4, 0, 1179682, 4, 0, 1179684, 5, 0, 1376234, 0, 0, 1376238, 0, 0, 1376240, 0, 0, 1376242, 0, 0, 1376246, 0, 0, 1376250, 0, 0, 1376254, 0, 0, 1310722, 0, 0, 1310726, 0, 0, 1310729, 0, 0, 1310732, 0, 0, 1310736, 0, 0, 1310740, 0, 0, 1310744, 0, 0, 1310748, 5, 0, 1310752, 5, 0, 1310756, 5, 0, 1310760, 5, 0, 1310764, 5, 0, 1441820, 5, 0, 1441824, 5, 0, 1441827, 5, 0, 1441831, 5, 0, 1441835, 5, 0, 1441836, 5, 0, 1703964, 5, 0, 1703968, 5, 0, 1703972, 5, 0, 1703976, 5, 0, 1703980, 5, 0, 1966108, 5, 0, 1966112, 5, 0, 1966116, 5, 0, 1966120, 5, 0, 1966124, 5, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 289, 51.875 )
+shape = SubResource( 55 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -39, 130 )
+shape = SubResource( 57 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 380.5, 269 )
+shape = SubResource( 58 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 402, -42 )
+shape = SubResource( 58 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Movimentação" = SubResource( 59 )
+anims/RESET = SubResource( 60 )
+
+[node name="Pixil-frame-0" type="Sprite" parent="."]
+position = Vector2( 72, 53 )
+texture = ExtResource( 19 )
+
+[node name="Pixil-frame-1" type="Sprite" parent="."]
+position = Vector2( 72, 22 )
+texture = ExtResource( 25 )
+
+[node name="Pixil-frame-2" type="Sprite" parent="."]
+position = Vector2( 104, 53 )
+texture = ExtResource( 27 )
+
+[node name="Pixil-frame-3" type="Sprite" parent="."]
+position = Vector2( 40, 53 )
+texture = ExtResource( 26 )
+
+[node name="Pixil-frame-0(9)" type="Sprite" parent="."]
+position = Vector2( 194, 40 )
+texture = ExtResource( 29 )
+
+[node name="Pixil-frame-1(6)" type="Sprite" parent="."]
+position = Vector2( 252, 39 )
+texture = ExtResource( 30 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 187.0
+margin_top = 60.0
+margin_right = 274.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 61 )
+text = "Abrir diálogo"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 687, 127 )
+scale = Vector2( 1.53125, 1.24609 )
+frames = SubResource( 65 )
+playing = true
+
+[node name="AnimaçãoTutorial" type="Area2D" parent="."]
+position = Vector2( 507, 138 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimaçãoTutorial"]
+position = Vector2( 39, 1.5 )
+shape = SubResource( 62 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 64 )
+anims/finaltutorial = SubResource( 63 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 602, 122 )
 
 [node name="Personagem" type="KinematicBody2D" parent="."]
 position = Vector2( 28, 131 )
@@ -830,7 +930,6 @@ anims/correndo_para_direita = SubResource( 10 )
 anims/correndo_para_esquerda = SubResource( 11 )
 
 [node name="Camera" type="Camera2D" parent="Personagem"]
-visible = false
 position = Vector2( 36, 37 )
 current = true
 zoom = Vector2( 1.4, 1.4 )
@@ -838,25 +937,46 @@ limit_smoothed = true
 script = SubResource( 12 )
 
 [node name="Xp" type="Sprite" parent="Personagem/Camera"]
-position = Vector2( 201.455, -121.5 )
+position = Vector2( 172.455, -103.5 )
 scale = Vector2( 0.668187, 0.79 )
 texture = ExtResource( 7 )
 
 [node name="Pontos" type="Label" parent="Personagem/Camera"]
 pause_mode = 2
-margin_left = 172.0
-margin_top = -138.0
-margin_right = 249.0
-margin_bottom = -103.0
+margin_left = 143.0
+margin_top = -120.0
+margin_right = 220.0
+margin_bottom = -85.0
 custom_fonts/font = SubResource( 13 )
 text = "10000"
 align = 2
 valign = 1
 script = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 text_color = Color( 0.298039, 0.988235, 0.956863, 1 )
+
+[node name="Cima" type="TouchScreenButton" parent="Personagem/Camera"]
+position = Vector2( 166, 40 )
+scale = Vector2( 0.3, 0.3 )
+normal = ExtResource( 42 )
+pressed = ExtResource( 41 )
+
+[node name="Baixo" type="TouchScreenButton" parent="Personagem/Camera"]
+position = Vector2( 166, 94 )
+scale = Vector2( 0.29, 0.29 )
+normal = ExtResource( 35 )
+pressed = ExtResource( 39 )
+
+[node name="Esquerda" type="TouchScreenButton" parent="Personagem/Camera"]
+position = Vector2( 193, 69 )
+scale = Vector2( 0.28, 0.28 )
+normal = ExtResource( 38 )
+pressed = ExtResource( 36 )
+
+[node name="Direita" type="TouchScreenButton" parent="Personagem/Camera"]
+position = Vector2( 137, 69 )
+scale = Vector2( 0.29, 0.29 )
+normal = ExtResource( 37 )
+pressed = ExtResource( 40 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Personagem/Camera"]
 
@@ -1389,88 +1509,17 @@ autoplay = true
 tile_set = SubResource( 56 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -589829, 0, 0, -589826, 0, 0, -655357, 0, 0, -655348, 0, 0, -589824, 0, 0, -589819, 0, 0, -589815, 0, 0, -589809, 0, 0, -589806, 0, 0, -589804, 0, 0, -589801, 0, 0, -262158, 0, 0, -262153, 0, 0, -131090, 0, 0, 65523, 0, 0, 65527, 0, 0, 196590, 0, 0, 327666, 0, 0, 327671, 0, 0, 458743, 0, 0, 524270, 0, 0, 589810, 0, 0, 589815, 0, 0, 655356, 0, 0, 589826, 0, 0, 589831, 0, 0, 589841, 0, 0, 655360, 0, 0, 655365, 0, 0, 655372, 0, 0, 720912, 0, 0, 720915, 0, 0, 720918, 0, 0 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 289, 51.875 )
-shape = SubResource( 55 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -39, 130 )
-shape = SubResource( 57 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 380.5, 269 )
-shape = SubResource( 58 )
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 402, -42 )
-shape = SubResource( 58 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-"anims/Movimentação" = SubResource( 59 )
-anims/RESET = SubResource( 60 )
-
-[node name="Pixil-frame-0" type="Sprite" parent="."]
-position = Vector2( 72, 53 )
-texture = ExtResource( 19 )
-
-[node name="Pixil-frame-1" type="Sprite" parent="."]
-position = Vector2( 72, 22 )
-texture = ExtResource( 25 )
-
-[node name="Pixil-frame-2" type="Sprite" parent="."]
-position = Vector2( 104, 53 )
-texture = ExtResource( 27 )
-
-[node name="Pixil-frame-3" type="Sprite" parent="."]
-position = Vector2( 40, 53 )
-texture = ExtResource( 26 )
-
-[node name="Pixil-frame-0(9)" type="Sprite" parent="."]
-position = Vector2( 194, 40 )
-texture = ExtResource( 29 )
-
-[node name="Pixil-frame-1(6)" type="Sprite" parent="."]
-position = Vector2( 252, 39 )
-texture = ExtResource( 30 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = 187.0
-margin_top = 60.0
-margin_right = 274.0
-margin_bottom = 76.0
-custom_fonts/font = SubResource( 61 )
-text = "Abrir dealogo"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 687, 127 )
-scale = Vector2( 2.78125, 2.44531 )
-frames = SubResource( 65 )
-frame = 2
-playing = true
-
-[node name="AnimaçãoTutorial" type="Area2D" parent="."]
-position = Vector2( 507, 138 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimaçãoTutorial"]
-position = Vector2( 39, 1.5 )
-shape = SubResource( 62 )
-
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 64 )
-anims/finaltutorial = SubResource( 63 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 602, 122 )
+tile_data = PoolIntArray( -589829, 0, 0, -589826, 0, 0, -655357, 0, 0, -655348, 0, 0, -589824, 0, 0, -589819, 0, 0, -589815, 0, 0, -589809, 0, 0, -589806, 0, 0, -589804, 0, 0, -589801, 0, 0, -262158, 0, 0, -262153, 0, 0, -131090, 0, 0, 65523, 0, 0, 65527, 0, 0, 196590, 0, 0, 327666, 0, 0, 327671, 0, 0, 458743, 0, 0, 524270, 0, 0, 589810, 0, 0, 589815, 0, 0, 786423, 0, 0, 720918, 0, 0, 917526, 0, 0, 1048567, 0, 0, 1114134, 0, 0, 1245174, 0, 0, 1245179, 0, 0, 1179648, 0, 0, 1179652, 0, 0, 1179657, 0, 0, 1179661, 0, 0, 1179665, 0, 0, 1179668, 0, 0 )
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_started" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_started"]
 [connection signal="body_entered" from="AnimaçãoTutorial" to="." method="_on_AnimaoTutorial_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer2" to="." method="_on_AnimationPlayer2_animation_finished"]
+[connection signal="pressed" from="Personagem/Camera/Cima" to="Personagem" method="_CimaJoystick"]
+[connection signal="released" from="Personagem/Camera/Cima" to="Personagem" method="_joystickExited"]
+[connection signal="pressed" from="Personagem/Camera/Baixo" to="Personagem" method="_baixoJoystick"]
+[connection signal="released" from="Personagem/Camera/Baixo" to="Personagem" method="_joystickExited"]
+[connection signal="pressed" from="Personagem/Camera/Esquerda" to="Personagem" method="_esquerdaJoystick"]
+[connection signal="released" from="Personagem/Camera/Esquerda" to="Personagem" method="_joystickExited"]
+[connection signal="pressed" from="Personagem/Camera/Direita" to="Personagem" method="_direitaJoystick"]
+[connection signal="released" from="Personagem/Camera/Direita" to="Personagem" method="_joystickExited"]

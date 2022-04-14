@@ -4,17 +4,59 @@ var status = 1 # 1 jogando, 0 parado
 var vscore = 0 # pontuação obtida
 var speed = 2 # velocidade, aumente esse valor para deixar o jogo mais difícil
 var gravity = 3.5 # gravidade, aumente esse valor para deixar o jogo mais difícil
+var FILE_NAME = 'user://infos.json'
+
+var player = {
+	'isMobile': false
+}
+
+func loadInfoMobile():
+	var file = File.new()
+	if file.file_exists(FILE_NAME):
+		file.open(FILE_NAME, File.READ)
+		var data = parse_json(file.get_as_text())
+		file.close()
+		if typeof(data) == TYPE_DICTIONARY:
+			player = data
+			return data
+		else:
+			printerr("Arquivo corrompido")
+	else:
+		printerr("Sem informações salvas!")
 
 # executa essa função ao carregar o jogo
 func _ready():
+	loadInfoMobile()
 	# oculta o "gameover"
 	$perdeu.hide()
 
 
-# executa essa função a cada frame (60 FPS)
+func bhramaUp():
+	$BrahmaVoadora.position.y -= 70
+	
+func bhramaDown():
+	$BrahmaVoadora.position.y += 56
+	
+func restartGame():
+	$score.set_text("0") # zera o score
+	vscore = 0 #Coloca os pontos em zero
+	status = 1 #Informa que está jogando
+	$BrahmaVoadora/bhramaImagens.playing = true #Inicia a animação da Brhama
+	$BrahmaVoadora.position.y = 0 #Retorna a posição
+	$Barrius.position.x = 400 #Altera o local do Barril
+	$perdeu.hide() #Torna invísivel a imagem de perdeu
+	$restartTouch.visible = false
+	$bhramaBaixo.visible = true
+	$bhramaCima.visible = true
+	
 func _process(delta):
 	
-	if(vscore == 10):
+	if (player.isMobile == true):
+		$bhramaBaixo.visible = true
+		$bhramaCima.visible = true
+		$fecharTouch.visible = true
+	
+	if(vscore == 6):
 		print('Venceu')
 		yield(get_tree().create_timer(3.0), "timeout") #Aguarda 3 segundo
 		get_tree().change_scene("res://D&IMental.tscn")
@@ -56,17 +98,13 @@ func _process(delta):
 	elif status == 0: #Bhrama está parada
 		
 		$BrahmaVoadora/bhramaImagens.playing = false # faz dragão parar de bater as asas
-		$perdeu.show() # exibe imagem gameover
+		$perdeu.show() #Mostra a imagem de perdeu
+		$restartTouch.visible = true
+		$bhramaBaixo.visible = false
+		$bhramaCima.visible = false
 
-		# se apertou enter ou space, recomeça o jogo
 		if Input.is_action_pressed("ui_accept"):
-			$score.set_text("0") # zera o score
-			vscore = 0 # zera o score
-			status = 1 # muda o status para "jogando"
-			$BrahmaVoadora/bhramaImagens.playing = true # faz dragão voltar a bater as asas
-			$BrahmaVoadora.position.y = 0 # volta o dragão para a posição original
-			$Barrius.position.x = 400 # muda a posição das colunas
-			$perdeu.hide() # oculta o gameover
+			restartGame()
 			
 #Assim que o personagem passa pelo Barril
 func _passouBarril(body):
@@ -85,3 +123,19 @@ func _unhandled_input(event):
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
 			get_tree().change_scene("res://D&IMental.tscn")
+
+
+func _bhramaCimaPressed():
+	bhramaUp()
+
+
+func _bhramaBaixoPressed():
+	bhramaDown()
+
+
+func _restartGamePressed():
+	restartGame()
+
+
+func _fecharTouch():
+	get_tree().change_scene("res://D&IMental.tscn")

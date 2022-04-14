@@ -129,10 +129,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Entre aqui e atinja 5 pontos para que você possa ajudar os demais membros da comunidade PCD."
-		},
-		{
-			"change_scene": "res://pong.tscn",
-			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Jelly Anika.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Creditos.gd" type="Script" id=2]
+[ext_resource path="res://Action RPG Resources/Texture/creditos.png" type="Texture" id=3]
+[ext_resource path="res://Action RPG Resources/Texture/fundo.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0.545098, 0.992157, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Creditos" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 162, 90 )
+texture = ExtResource( 4 )
+
+[node name="Creditos" type="Sprite" parent="."]
+position = Vector2( 160, 90.4375 )
+scale = Vector2( 0.251563, 0.248785 )
+texture = ExtResource( 3 )
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 120.0
+margin_top = 146.0
+margin_right = 198.0
+margin_bottom = 172.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+text = "Voltar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Button4" to="." method="_Voltar"]

@@ -7,6 +7,7 @@ var levelPassed = false
 var liberadoAbrir = false
 var liberadoAbrirE = false
 var liberadoAbrirG = false
+var touchClicked = false
 var qntVidas = 0
 var pontosToBuy
 var destination
@@ -18,8 +19,15 @@ var player = { #Local database
 	'vidas': 0,
 	'mercadoAlreadyOpen': false,
 	'alreadyPlayed': false,
-	'isMobile': false
+	'isMobile': false,
+	'mentalAlreadyCompleted': false,
+	'fobiaAlreadyCompleted': false,
+	'compraFase2': false,
+	'alreadyFinalScene': false
 } 
+
+var neutro = preload("res://Action RPG Resources/Player/NeutroSpriteSheet.png")
+var feliz = preload("res://Action RPG Resources/Player/FelizSpriteSheet.png")
 
 #Coloca os pontos na HUD do jogo
 func setPoints(points):
@@ -109,7 +117,10 @@ func MensagemPressE(visible):
 
 # Aparece para apertar G.
 func MensagemPressG(visible):
-	$Personagem/Camera/CanvasLayer/Popups/Popup5.visible = visible
+	if (player.isMobile == true):
+		$Personagem/Camera/abrirMercadoTouch.visible = visible
+	else:
+		$Personagem/Camera/CanvasLayer/Popups/Popup5.visible = visible
 
 #Abre o PopUp de resposta com "Acertou" ou "Errou"
 func messageFinal(text):
@@ -165,6 +176,7 @@ func _ready():
 	if(player.alreadyPlayed == false):
 		var dialogWelcome = Dialogic.start("Welcome")
 		add_child(dialogWelcome)
+		dialogWelcome.connect('timeline_end', self, "welcomeUnpause")
 	save()
 	
 	$Personagem.set_position(Global.position)
@@ -173,6 +185,19 @@ func _ready():
 #Roda em looping o que está dentro dela
 func _process(delta):
 	checkVidas() #Chama a função que verifica quantas sprites irão aparecer
+	
+	if(player.mentalAlreadyCompleted == true) and (player.fobiaAlreadyCompleted == false):
+		$Personagem/Sprite.texture = neutro
+	elif(player.fobiaAlreadyCompleted == true) and (player.mentalAlreadyCompleted == true):
+		$Personagem/Sprite.texture = feliz
+
+	if(player.compraFase2 == true):
+		$Collisions/Fase2.disabled = true
+		$Bloqueado.visible = false
+	else:
+		$Collisions/Fase2.disabled = false
+		$Bloqueado.visible = true
+	
 	
 	if (player.isMobile == false):
 		$Personagem/Camera/Cima.visible = false
@@ -185,20 +210,16 @@ func _process(delta):
 		if Input.is_action_pressed('ui_m'):
 			beVisible(true) #Torna vísivel o quiz
 			get_tree().paused = true
-	##		if (levelPassed == true):
-	##			$Collisions/mecanicaTeste.disabled = true
-	##		else:                                           #Sistema para bloquear as fases
-	##			$Collisions/mecanicaTeste.disabled = false
 	elif liberadoAbrirE: #Verifica se o pesonagem está dentro da AREA de Minigame
 		if Input.is_action_pressed("ui_e"):
 			get_tree().change_scene("res://pong.tscn") #Envia para o Minigame
 	elif liberadoAbrirG:
-		if Input.is_action_pressed("ui_g"): #Verifica se o pesonagem está dentro da AREA de Mercado
-			beVisibleMarket(true) #Torna o mercado vísivel
-			get_tree().paused = true
-			MensagemPressG(false) #Fecha a mensagem 'Pressione G'
-			player.mercadoAlreadyOpen = true
-			save()
+			if Input.is_action_pressed("ui_g"): #Verifica se o pesonagem está dentro da AREA de Mercado
+				beVisibleMarket(true) #Torna o mercado vísivel
+				get_tree().paused = true
+				MensagemPressG(false) #Fecha a mensagem 'Pressione G'
+				player.mercadoAlreadyOpen = true
+				save()
 	else:
 		pass
 
@@ -342,7 +363,9 @@ func marketOpenMessage(body):
 			MensagemPressG(true) #Torna o aviso de "Pressione G" visivel
 		else:
 			print('Nunca Abriu')
+			get_tree().paused = true
 			var dialog = Dialogic.start("Mercado")
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 			add_child(dialog)
 			dialog.connect('timeline_end', self, "unpause")
 			liberadoAbrirG = true #Libera a tecla G para funcionar 
@@ -354,6 +377,14 @@ func unpause(timeline_Teste):
 	get_tree().paused = false
 	player.mercadoAlreadyOpen = true
 	save()
+	
+#Quando o dialogo finiliza
+func welcomeUnpause(timeline_Welcome):
+	get_tree().paused = false
+	
+func historiaNpcUnpause(timeline_EronHistoria):
+	get_tree().paused = false
+
 #Quando o personagem sai da área do Mercado
 func marketExited(body):
 	if body.name == 'Personagem': 
@@ -396,6 +427,7 @@ func comprarFase2():
 		beVisibleMarket(false) #Torna o mercado invisivel
 		get_tree().paused = false
 		messageMarket('Item comprado com sucesso') #Define a mensagem final do mercado
+		player.compraFase2 = true
 		player.xp = getPoints() #Captura os pontos atuais do player
 		save() #Salva as informações em arquivo local
 	else: #Pontos não suficientes
@@ -450,5 +482,37 @@ func _verifyPlayed(body):
 
 
 func _onNPCEntered(body):
-	var dialogNPCHistoria = Dialogic.start("EronHistoria")
-	add_child(dialogNPCHistoria)
+	if(player.alreadyPlayed == true):
+		pass
+	else:
+		get_tree().paused = true
+		var dialogNPCHistoria = Dialogic.start("EronHistoria")
+		dialogNPCHistoria.pause_mode = Node.PAUSE_MODE_PROCESS
+		add_child(dialogNPCHistoria)
+		dialogNPCHistoria.connect('timeline_end', self, "historiaNpcUnpause")
+
+
+func _on_Area2D6_body_entered(body):
+	if body.name == "Personagem":
+		get_tree().change_scene("res://D&IFobia.tscn")
+		Global.position = Vector2(-734, -1879)
+
+
+func _Sound():
+	$Personagem/Camera/AudioStreamPlayer2D.stream_paused = true
+	$Personagem/Camera/Button2.visible = true
+	$Personagem/Camera/Button.visible = false
+
+
+func _SoundOn():
+	$Personagem/Camera/AudioStreamPlayer2D.stream_paused = false
+	$Personagem/Camera/Button2.visible = false
+	$Personagem/Camera/Button.visible = true
+
+
+func _mercadoTouchClicked():
+	beVisibleMarket(true) #Torna o mercado vísivel
+	get_tree().paused = true
+	MensagemPressG(false) #Fecha a mensagem 'Pressione G'
+	player.mercadoAlreadyOpen = true
+	save()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://logic/paddle.gd" type="Script" id=1]
 [ext_resource path="res://paddle.png" type="Texture" id=2]
@@ -10,14 +10,19 @@
 [ext_resource path="res://logic/ceiling_floor.gd" type="Script" id=8]
 [ext_resource path="res://LeftWall.gd" type="Script" id=9]
 [ext_resource path="res://Hey Comic.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Action RPG Resources/Texture/Cima.png" type="Texture" id=11]
+[ext_resource path="res://Action RPG Resources/Texture/Baixo.png" type="Texture" id=12]
+[ext_resource path="res://Action RPG Resources/Texture/cimaON.png" type="Texture" id=13]
+[ext_resource path="res://Action RPG Resources/Texture/baixoON.png" type="Texture" id=14]
 
 [sub_resource type="GDScript" id=5]
 script/source = "extends Node2D
 
+var FILE_NAME = 'user://infos.json'
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = \"text\"
+var player = {
+	'isMobile': false
+}
 
 func addCoins(qnt):
 	var pontosAtual = int($Pontos.text) #Pega os pontos atuais e tranforma em Número
@@ -25,11 +30,29 @@ func addCoins(qnt):
 	var pontosInString = str(pontosAdicionados) #Retorna a soma para o formato String
 	$Pontos.text = pontosInString #Substitui o valor dos pontos pelo valor adicionado
 
+func loadIsMobile():
+	var file = File.new()
+	if file.file_exists(FILE_NAME):
+		file.open(FILE_NAME, File.READ)
+		var data = parse_json(file.get_as_text())
+		file.close()
+		if typeof(data) == TYPE_DICTIONARY:
+			player = data
+			return data
+		else:
+			printerr(\"Arquivo corrompido\")
+	else:
+		printerr(\"Sem informações salvas!\")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	loadIsMobile()
 	
 func _process(delta):
+	if (player.isMobile == true):
+		$PongBaixo.visible = true
+		$PongCima.visible = true
+	
 	if $Pontos.text == '5':
 		$Parabens.visible = true
 		get_tree().paused = true
@@ -44,9 +67,6 @@ func _unhandled_input(event):
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
 			get_tree().change_scene(\"res://D&IMental.tscn\")
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 "
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -175,6 +195,18 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="PongCima" type="TouchScreenButton" parent="."]
+position = Vector2( 250, 107 )
+scale = Vector2( 0.333333, 0.333333 )
+normal = ExtResource( 11 )
+pressed = ExtResource( 13 )
+
+[node name="PongBaixo" type="TouchScreenButton" parent="."]
+position = Vector2( 250, 146 )
+scale = Vector2( 0.333333, 0.333333 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 14 )
+
 [connection signal="area_entered" from="Left" to="Left" method="_on_area_entered"]
 [connection signal="area_entered" from="Right" to="Right" method="_on_area_entered"]
 [connection signal="area_entered" from="LeftWall" to="LeftWall" method="_on_wall_area_entered"]
@@ -183,3 +215,5 @@ __meta__ = {
 [connection signal="area_entered" from="Ceiling" to="Ceiling" method="_on_area_entered"]
 [connection signal="area_entered" from="Floor" to="Left" method="_tocouEmbaixo"]
 [connection signal="area_entered" from="Floor" to="Floor" method="_on_area_entered"]
+[connection signal="pressed" from="PongCima" to="Right" method="_touchUpPong"]
+[connection signal="pressed" from="PongBaixo" to="Right" method="_touchDownPong"]

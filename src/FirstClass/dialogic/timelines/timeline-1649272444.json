@@ -1,0 +1,29 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1647575140.cfg"
+		},
+		{
+			"character": "character-1648644473.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Teste"
+		},
+		{
+			"character": "character-1648644505.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Teste"
+		},
+		{
+			"change_scene": "res://Labirinto.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4",
+		"file": "timeline-1649272444.json",
+		"name": "Minigame3"
+	}
+}

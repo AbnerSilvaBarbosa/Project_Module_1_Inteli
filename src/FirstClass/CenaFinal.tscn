@@ -1,0 +1,254 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://Action RPG Resources/Tileset/aguaAnimada.tres" type="Texture" id=1]
+[ext_resource path="res://Action RPG Resources/World/tijolos.png" type="Texture" id=2]
+[ext_resource path="res://Action RPG Resources/World/GrassBackground.png" type="Texture" id=3]
+[ext_resource path="res://Action RPG Resources/Tileset/Tileset.png" type="Texture" id=4]
+[ext_resource path="res://Action RPG Resources/Tileset/Texture/TX Plant.png" type="Texture" id=5]
+[ext_resource path="res://SpriteFinal/pixil-frame-11.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/CenaFinal.gd" type="Script" id=7]
+[ext_resource path="res://SpriteFinal/pixil-frame-12.png" type="Texture" id=8]
+[ext_resource path="res://SpriteFinal/pixil-frame-10.png" type="Texture" id=9]
+[ext_resource path="res://SpriteFinal/pixil-frame-8.png" type="Texture" id=10]
+[ext_resource path="res://SpriteFinal/pixil-frame-7.png" type="Texture" id=11]
+[ext_resource path="res://SpriteFinal/pixil-frame-9.png" type="Texture" id=12]
+[ext_resource path="res://SpriteFinal/pixil-frame-13.png" type="Texture" id=13]
+[ext_resource path="res://SpriteFinal/pixil-frame-14.png" type="Texture" id=14]
+[ext_resource path="res://SpriteFinal/pixil-frame-15.png" type="Texture" id=15]
+[ext_resource path="res://SpriteFinal/pixil-frame-4.png" type="Texture" id=16]
+[ext_resource path="res://SpriteFinal/pixil-frame-5.png" type="Texture" id=17]
+[ext_resource path="res://SpriteFinal/pixil-frame-6.png" type="Texture" id=18]
+[ext_resource path="res://SpriteFinal/pixil-frame-0.png" type="Texture" id=19]
+[ext_resource path="res://SpriteFinal/pixil-frame-1.png" type="Texture" id=20]
+[ext_resource path="res://SpriteFinal/pixil-frame-2.png" type="Texture" id=21]
+[ext_resource path="res://SpriteFinal/pixil-frame-3.png" type="Texture" id=22]
+[ext_resource path="res://SpriteFinal/pixil-frame-18.png" type="Texture" id=23]
+[ext_resource path="res://SpriteFinal/pixil-frame-19.png" type="Texture" id=24]
+[ext_resource path="res://SpriteFinal/pixil-frame-20.png" type="Texture" id=25]
+[ext_resource path="res://SpriteFinal/pixil-frame-16.png" type="Texture" id=26]
+[ext_resource path="res://SpriteFinal/pixil-frame-17.png" type="Texture" id=27]
+[ext_resource path="res://audios/fim do jogo.mp3" type="AudioStream" id=28]
+
+[sub_resource type="TileSet" id=1]
+0/name = "aguaAnimada.tres 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Tileset.png 1"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 144, 208, 16, 16 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "tijolos.png 2"
+2/texture = ExtResource( 2 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "GrassBackground.png 3"
+3/texture = ExtResource( 3 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "TX Plant.png 4"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 160, 16, 96, 144 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+
+[sub_resource type="TileSet" id=2]
+0/name = "GrassBackground.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "TX Plant.png 1"
+1/texture = ExtResource( 5 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 160, 16, 96, 144 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+
+[sub_resource type="Animation" id=3]
+resource_name = "Nova Animação"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.7, 4.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 191, 374 ), Vector2( 189, 118 ), Vector2( 195, 4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3, 6.1, 8.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 197, 80 ), Vector2( 197, 80 ), Vector2( 190, -20 ), Vector2( 190, -294 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 189, 118 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 190, -294 ) ]
+}
+
+[sub_resource type="TileSet" id=4]
+0/name = "TX Plant.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 160, 16, 96, 144 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[node name="cenaFinal" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -524288, 0, 0, -524284, 0, 0, -524280, 0, 0, -524276, 0, 0, -524272, 0, 0, -524268, 0, 0, -262144, 0, 0, -262140, 0, 0, -262136, 0, 0, -262132, 0, 0, -262128, 0, 0, -262124, 0, 0, 0, 0, 0, 4, 0, 0, 8, 0, 0, 12, 0, 0, 16, 0, 0, 20, 0, 0, 262144, 0, 0, 262148, 0, 0, 262152, 0, 0, 262156, 0, 0, 262160, 0, 0, 262164, 0, 0, 524288, 0, 0, 524292, 0, 0, 524296, 0, 0, 524300, 0, 0, 524304, 0, 0, 524308, 0, 0, 786432, 0, 0, 786436, 0, 0, 786440, 0, 0, 786444, 0, 0, 786448, 0, 0, 786452, 0, 0, 851971, 1, 0, 851978, 1, 0, 851987, 1, 0, 917504, 1, 0, 917506, 1, 0, 917507, 1, 0, 917508, 1, 0, 917509, 1, 0, 917513, 1, 0, 917514, 1, 0, 917515, 1, 0, 917519, 1, 0, 917521, 1, 0, 917523, 1, 0, 917525, 1, 0, 917527, 1, 0, 983040, 1, 0, 983041, 1, 0, 983042, 1, 0, 983043, 1, 0, 983044, 1, 0, 983045, 1, 0, 983046, 1, 0, 983047, 1, 0, 983048, 1, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983055, 1, 0, 983056, 1, 0, 983057, 1, 0, 983058, 1, 0, 983059, 1, 0, 983060, 1, 0, 983061, 1, 0, 983062, 1, 0, 983063, 1, 0, 1048576, 1, 0, 1048577, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1114112, 1, 0, 1114113, 1, 0, 1114114, 1, 0, 1114115, 1, 0, 1114116, 1, 0, 1114117, 1, 0, 1114118, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114123, 1, 0, 1114124, 1, 0, 1114125, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114131, 1, 0, 1114132, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1179648, 1, 0, 1179649, 1, 0, 1179650, 1, 0, 1179651, 1, 0, 1179652, 1, 0, 1179653, 1, 0, 1179654, 1, 0, 1179655, 1, 0, 1179656, 1, 0, 1179657, 1, 0, 1179658, 1, 0, 1179659, 1, 0, 1179660, 1, 0, 1179661, 1, 0, 1179662, 1, 0, 1179663, 1, 0, 1179664, 1, 0, 1179665, 1, 0, 1179666, 1, 0, 1179667, 1, 0, 1179668, 1, 0, 1179669, 1, 0, 1179670, 1, 0, 1179671, 1, 0, 1245184, 1, 0, 1245185, 1, 0, 1245186, 1, 0, 1245187, 1, 0, 1245188, 1, 0, 1245189, 1, 0, 1245190, 1, 0, 1245191, 1, 0, 1245192, 1, 0, 1245193, 1, 0, 1245194, 1, 0, 1245195, 1, 0, 1245196, 1, 0, 1245197, 1, 0, 1245198, 1, 0, 1245199, 1, 0, 1245200, 1, 0, 1245201, 1, 0, 1245202, 1, 0, 1245203, 1, 0, 1245204, 1, 0, 1245205, 1, 0, 1245206, 1, 0, 1245207, 1, 0, 1310720, 1, 0, 1310721, 1, 0, 1310722, 1, 0, 1310723, 1, 0, 1310724, 1, 0, 1310725, 1, 0, 1310726, 1, 0, 1310727, 1, 0, 1310728, 1, 0, 1310729, 1, 0, 1310730, 1, 0, 1310731, 1, 0, 1310732, 1, 0, 1310733, 1, 0, 1310734, 1, 0, 1310735, 1, 0, 1310736, 1, 0, 1310737, 1, 0, 1310738, 1, 0, 1310739, 1, 0, 1310740, 1, 0, 1310741, 1, 0, 1310742, 1, 0, 1310743, 1, 0, 1507342, 3, 0, 1507346, 3, 0, 1507348, 3, 0, 1572864, 3, 0, 1703936, 3, 0, 1703940, 3, 0, 1703944, 3, 0, 1703948, 3, 0, 1703952, 3, 0, 1703955, 3, 0, 1703956, 3, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource( 2 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1179649, 0, 0, 1179661, 0, 0, 1245190, 0, 0, 1245204, 0, 0, 1310720, 0, 0, 1310724, 0, 0, 1310728, 0, 0, 1310732, 0, 0, 1310735, 0, 0, 1310739, 0, 0, 1310740, 0, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 189, 118 )
+current = true
+zoom = Vector2( 1.1, 1.1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Nova Animação"
+"anims/Nova Animação" = SubResource( 3 )
+anims/RESET = SubResource( 5 )
+
+[node name="TileMap3" type="TileMap" parent="."]
+tile_set = SubResource( 4 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 1114132, 0, 0, 1245192, 0, 0, 1310720, 0, 0, 1310723, 0, 0, 1310727, 0, 0, 1310734, 0, 0, 1310737, 0, 0, 1310739, 0, 0, 1441791, 0, 0, 1376258, 0, 0, 1376261, 0, 0, 1376265, 0, 0, 1376267, 0, 0, 1376268, 0, 0, 1376272, 0, 0 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 190, -294 )
+frames = SubResource( 6 )
+frame = 18
+playing = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 28 )
+autoplay = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

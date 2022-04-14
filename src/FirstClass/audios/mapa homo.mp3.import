@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mapa homo.mp3-d8437205f2410fccadce0e7d648da55e.mp3str"
+
+[deps]
+
+source_file="res://audios/mapa homo.mp3"
+dest_files=[ "res://.import/mapa homo.mp3-d8437205f2410fccadce0e7d648da55e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

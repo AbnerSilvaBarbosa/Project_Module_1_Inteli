@@ -6,6 +6,8 @@ func goToGame():
 		get_tree().change_scene("res://Tutorial.tscn") #Altera a cena para a principal
 func quitGame(): 
 		get_tree().quit() #Faz o quit do jogo.
+func goToCredit():
+	get_tree().change_scene("res://Creditos.tscn")
 		
 var player = { #Local database
 	'xp': 0,
@@ -71,3 +73,8 @@ func _onMobileClicked():
 	player.isMobile = true
 	save()
 	$Popup.visible = false
+
+
+func _Creditos():
+	goToCredit()
+	pass # Replace with function body.

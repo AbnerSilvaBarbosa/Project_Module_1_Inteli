@@ -2,7 +2,7 @@ extends Node2D
 
 var qntVidas = 0 
 var FILE_NAME = "user://infos.json"
-var FILE_PERGUNTAS = "user://PerguntasFase1.JSON"
+var FILE_PERGUNTAS = "user://PerguntasFase1.json"
 var randomNumberForDelete = 0
 var timeline = ''
 var cenaDestination = "res://D&IMental.tscn"
@@ -130,6 +130,19 @@ func setFeedbackContent(content):
 func MensagemPressM(visible):
 	$Personagem/Camera/CanvasLayer/Popups/Popup3.visible = visible
 
+# Aparece o Touch do M
+func TouchPressM(visible):
+	$Personagem/Camera/openMTouch.visible = visible
+
+# Aparece o Touch do G
+func TouchPressG(visible):
+	$Personagem/Camera/openGTouch.visible = visible
+
+# Aparece o Touch do G
+func TouchPressCientista(visible):
+	$Personagem/Camera/openCientista.visible = visible
+
+
 # Aparece para apertar G.
 func MensagemPressG(visible):
 	$Personagem/Camera/CanvasLayer/Popups/Popup5.visible = visible
@@ -217,10 +230,6 @@ var player = {
 func setPoints(points):
 	$Personagem/Camera/Pontos.text = str(points) 
 
-## Executa quando o dialogo é finilazado
-#func unpause(timeline_Cientista):
-#	get_tree().change_scene("res://D&IMental.tscn")
-
 #Add uma quantidade específica de pontos do player
 func addCoins(qnt): # Uma função que adiciona coinds "Dinheiro" para o personagem como forma de "Xp"
 	var pontosAtual = int($Personagem/Camera/Pontos.text) #Pega os pontos atuais e tranforma em Número
@@ -245,7 +254,10 @@ func defineQuestion():
 	var lenghtArray = float(len(perguntasFromDB))
 	if lenghtArray >= 1:
 		liberadoAbrir = true #Libera a tecla M para funcionar
-		MensagemPressM(true) #Torna o aviso de "Pressione M" visivel
+		if (player.isMobile == true):
+			TouchPressM(true) #Torna o botão touch para abrir M vísivel
+		else:
+			MensagemPressM(true) #Torna o aviso de "Pressione M" visivel
 		var content = selectQuestion() #Gera uma pergunta de forma aleatória
 		setPopUpContent(content[0],content[1], content[2], content[3]) #Define o conteudo da pergunta
 		anc = content[4] #Define qual a resposta correta
@@ -267,9 +279,41 @@ func getPoints():
 func alreadyCompleted():
 	if (player.mentalAlreadyCompleted == false):
 		$TileMap2.visible = true
+		#Preto e Branco aqui
+		$Sprite.visible = true
+		$Sprite2.visible = true
+		$Sprite3.visible = true
+		$Sprite4.visible = true
+		$Sprite5.visible = true
+		$Sprite6.visible = true
+		$Sprite7.visible = true
+		$Sprite8.visible = true
+		$Sprite9.visible = true
+		$Sprite10.visible = true
 	else:
 		$TileMap2.visible = false
-
+		#Colorido aki
+		$PixilColorido1.visible = true
+		$PixilColorido2.visible = true
+		$PixilColorido3.visible = true
+		$PixilColorido4.visible = true
+		$PixilColorido5.visible = true
+		$PixilColorido6.visible = true
+		$PixilColorido7.visible = true
+		$PixilColorido8.visible = true
+		$PixilColorido9.visible = true
+		$PixilColorido10.visible = true
+		
+		$Sprite.visible = false
+		$Sprite2.visible = false
+		$Sprite3.visible = false
+		$Sprite4.visible = false
+		$Sprite5.visible = false
+		$Sprite6.visible = false
+		$Sprite7.visible = false
+		$Sprite8.visible = false
+		$Sprite9.visible = false
+		$Sprite10.visible = false
 #Salva novas informações no arquivo .JSON
 func save():
 	var file = File.new()
@@ -316,8 +360,14 @@ func attQnt(valor1,valor2):
 
 #Roda em looping
 func _process(delta):
-	
 	checkVidas() #Chama a função que verifica quantidade de vidas
+	
+	if (player.isMobile == false):
+		$Personagem/Camera/Cima.visible = false
+		$Personagem/Camera/Baixo.visible = false
+		$Personagem/Camera/Esquerda.visible = false
+		$Personagem/Camera/Direita.visible = false
+	
 	alreadyCompleted() #Verifica se o mapa já foi completado alguma vez ou não
 	var cont = contador()
 
@@ -336,16 +386,45 @@ func _process(delta):
 	if liberadoAbrirG:
 		if Input.is_action_pressed("ui_g"):
 			if(timeline == "Minigame1"):
+				get_tree().paused = true
 				var dialogMinigame = Dialogic.start("Minigame1")
+				dialogMinigame.pause_mode = Node.PAUSE_MODE_PROCESS
 				add_child(dialogMinigame)
+				dialogMinigame.connect('timeline_end', self, "unpause")
+				qntVidas = 1
+				player.vidas = 1
+				save()
 			elif (timeline == 'Minigame2'):
+				get_tree().paused = true
 				var dialogMinigame2 = Dialogic.start("Minigame2")
+				dialogMinigame2.pause_mode = Node.PAUSE_MODE_PROCESS
 				add_child(dialogMinigame2)
+				dialogMinigame2.connect('timeline_end', self, "unpause2")
+				qntVidas = 1
+				player.vidas = 1
+				save()
 	if liberadoAbrirCientista:
 		if Input.is_action_pressed("ui_g"):
+			get_tree().paused = true
 			var dialogScientist = Dialogic.start("Cientista")
+			dialogScientist.pause_mode = Node.PAUSE_MODE_PROCESS
 			add_child(dialogScientist)
+			dialogScientist.connect('timeline_end', self, "unpauseCientista")
 	pass
+
+#Despausa o jogo após dialogo
+func unpauseCientista(timeline_Cientista):
+	get_tree().paused = false
+
+#Despausa o jogo após dialogo
+func unpause(timeline_Minigame1):
+	get_tree().paused = false
+	get_tree().change_scene("res://FlappyBrahma.tscn")
+
+#Despausa o jogo após dialogo
+func unpause2(timeline_Minigame2):
+	get_tree().paused = false
+	get_tree().change_scene("res://pong.tscn")
 
 #Quando o personagem entra no portal
 func _on_Area2D3_body_entered(body):
@@ -360,11 +439,12 @@ func checkQuestoes():
 	if questionExist == true:
 		pass
 	else:
+		player.mentalAlreadyCompleted = true
+		save()
 		$Personagem/Camera/CanvasLayer/Popups/Popup4.visible = true
 		yield(get_tree().create_timer(3.0), "timeout") #Aguarda 3 segundo
 		$Personagem/Camera/CanvasLayer/Popups/Popup4.visible = false
-		player.mentalAlreadyCompleted = true
-		save()
+		
 
 #Quando você entra dentro de uma área destinada a pergunta
 func _perguntaEntered(body):
@@ -381,9 +461,10 @@ func _perguntaEntered(body):
 func _perguntaExited(body):
 	if body.name == "Personagem": 
 		liberadoAbrir = false #Bloqueia a tecla M para funcionar
-		MensagemPressM(false) #Torna o aviso de "Pressione M" invisivel
-	pass 
-	
+		if (player.isMobile == true):
+			TouchPressM(false) #Torna o botão touch para abrir M invísivel
+		else:
+			MensagemPressM(false) #Torna o aviso de "Pressione M" invísivel
 
 #Quando o botão A é selecionado no QUIZ
 func _onFirstOptionSelected():
@@ -463,12 +544,20 @@ func _onClosePressed():
 #Quando entra na área de MINIGAME
 func _onMinigame1Entered(body):
 	if (body.name == 'Personagem'):
-		liberadoAbrirG = true
-		MensagemPressG(true)
-		timeline = 'Minigame2'
-		Global.positionForMapa1 = Vector2(337, 925)
-		cenaDestination = "res://pong.tscn"
-		pass
+		if (qntVidas < 5):
+			$Personagem/Camera/CanvasLayer/Popups/Popup8.visible = true
+			yield(get_tree().create_timer(3.0), "timeout") #Aguarda 3 segundos
+			$Personagem/Camera/CanvasLayer/Popups/Popup8.visible = false
+		else:
+			liberadoAbrirG = true
+			if (player.isMobile == true):
+				TouchPressG(true)
+			else:
+				MensagemPressG(true)
+			timeline = 'Minigame2'
+			Global.positionForMapa1 = Vector2(337, 925)
+			cenaDestination = "res://pong.tscn"
+			pass
 
 #Quando o dialogo referente ao minigame é finalizado
 func dialogFinished():
@@ -477,20 +566,31 @@ func dialogFinished():
 #Quando você sai da área de minigame
 func _onMinigameExited(body):
 	liberadoAbrirG = false
-	liberadoAbrirCientista = false
-	MensagemPressG(false)
+	if (player.isMobile == true):
+		TouchPressM(false) #Torna o botão touch para abrir M invísivel
+	else:
+		MensagemPressG(false) #Torna o aviso de "Pressione M" invisivel
 	timeline = ""
 	pass
 
 #Quando entra na área do segundo minigame
 func _onMinigame2Entered(body):
 	if (body.name == 'Personagem'):
-		liberadoAbrirG = true
-		MensagemPressG(true)
-		timeline = 'Minigame1'
-		cenaDestination = "res://FlappyBrahma.tscn"
-		Global.positionForMapa1 = Vector2(-30, 925)
-		pass # Replace with function body.
+		if (qntVidas < 5):
+			$Personagem/Camera/CanvasLayer/Popups/Popup8.visible = true
+			yield(get_tree().create_timer(3.0), "timeout") #Aguarda 3 segundos
+			$Personagem/Camera/CanvasLayer/Popups/Popup8.visible = false
+		else:
+			liberadoAbrirG = true
+			print(player)
+			if (player.isMobile == true):
+				TouchPressG(true)
+			else:
+				MensagemPressG(true)
+			timeline = 'Minigame1'
+			cenaDestination = "res://FlappyBrahma.tscn"
+			Global.positionForMapa1 = Vector2(-30, 925)
+			pass
 
 #Quando o botão de seguir é pressionado no TIP do QUIZ
 func _onButtonSeguirPressed():
@@ -606,5 +706,52 @@ func _pergunta10Entered(body):
 #Quando o personagem entra na área do cientista 
 func _onScientistEntered(body):
 	if (body.name == 'Personagem'):
-		MensagemPressG(true) #Aparece a mensagem de pressione G
-		liberadoAbrirCientista = true #Libera que o dialógo seja aberto
+		if (player.isMobile == true):
+			TouchPressCientista(true)
+		else:
+			liberadoAbrirCientista = true #Libera que o dialógo seja aberto
+			MensagemPressG(true) #Aparece a mensagem de pressione G
+		
+
+#Quando o touch do G é clicado
+func _pressedTouchG():
+	get_tree().change_scene(cenaDestination)
+	qntVidas = 1
+	player.vidas = 1
+	save()
+
+#Quando o touch do M é clicado
+func _pressedTouchM():
+	beVisibleTip(true) #Torna vísivel o quiz
+	get_tree().paused = true
+
+#Quando o personagem sai da area do cientista
+func _onScientistExited(body):
+	if (body.name == 'Personagem'):
+		liberadoAbrirCientista = false
+		if (player.isMobile == true):
+			TouchPressCientista(false) #Torna o botão touch para abrir M invísivel
+		else:
+			MensagemPressG(false) #Torna o aviso de "Pressione M" invisivel
+
+#Qunado o touch do cientista é clicado
+func _pressedTouchCientista():
+	get_tree().paused = true
+	var dialogScientist = Dialogic.start("Cientista")
+	dialogScientist.pause_mode = Node.PAUSE_MODE_PROCESS
+	add_child(dialogScientist)
+	dialogScientist.connect('timeline_end', self, "unpauseCientista")
+
+
+func _on_Button_pressed():
+	$Personagem/Camera/AudioStreamPlayer2D.stream_paused = true
+	$Personagem/Button.visible = false
+	$Personagem/Button2.visible = true
+	pass # Replace with function body.
+
+
+func _on_Button2_pressed():
+	$Personagem/Camera/AudioStreamPlayer2D.stream_paused = false
+	$Personagem/Button.visible = true
+	$Personagem/Button2.visible = false
+	pass # Replace with function body.

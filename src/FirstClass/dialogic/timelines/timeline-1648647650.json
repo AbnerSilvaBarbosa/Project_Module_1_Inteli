@@ -51,10 +51,6 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ao atingir dez pontos, você adquire pontos de experiência e comprova que está disposto a continuar aprendendo. Assim, você contribui para a nossa luta contra o preconceito, e ajuda as pessoas com doenças mentais a serem melhor tratadas no ambiente em que vivemos."
-		},
-		{
-			"change_scene": "res://FlappyBrahma.tscn",
-			"event_id": "dialogic_041"
 		}
 	],
 	"metadata": {

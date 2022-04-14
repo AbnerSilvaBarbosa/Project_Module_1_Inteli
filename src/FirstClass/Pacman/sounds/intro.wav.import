@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/intro.wav-f196e261f58db78696b5ce60a2b1d5cf.sample"
+
+[deps]
+
+source_file="res://Pacman/sounds/intro.wav"
+dest_files=[ "res://.import/intro.wav-f196e261f58db78696b5ce60a2b1d5cf.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

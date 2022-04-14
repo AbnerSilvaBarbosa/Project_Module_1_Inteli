@@ -10,18 +10,17 @@
 
 ## Integrantes: 
 
-  * Abner
-  * Amanda
-  * Felipe Campos
-  * Guilherme Costa
-  * João Carazzato
-  * Livia Coutinho
-  * Pedro
-  * Yves
+  * Abner Silva Barbosa
+  * Amanda Ribeiro Fontes
+  * Felipe Pereira Campos
+  * João Pedro Gonçalves Carazzato
+  * Livia Lopes Coutinho
+  * Pedro Hagge Baptista
+  * Yves Levi Paixão Lapa
 
 ## Descrição
 
-📜Nosso projeto consiste em uma forma divertida sobre ensinar diversidade e inclusão aos funcionarios da <a href="https://www.ambev.com.br/">AMBEV</a>.
+📜Nosso projeto consiste em uma forma divertida sobre ensinar diversidade e inclusão aos funcionários da <a href="https://www.ambev.com.br/">AMBEV</a>.
 <p align="center">
 <img src="https://adalove.inteli.edu.br/newada-img/groups/fc232015-a2d2-4aa8-8491-0dc98cd4419f.jpeg" alt="NOME DO JOGO AQUI" border="0"></p>
  
@@ -34,18 +33,31 @@
 <p align="center">
 
  
-<p>https://user-images.githubusercontent.com/99296562/155750079-15aacbca-947a-4fcb-9dd8-ea883e1019e2.mp4</p>
+<p>https://user-images.githubusercontent.com/99296562/162761262-68384391-dfc5-4682-b54d-3746133913e6.mp4</p>
 
 
 <p align="center">
  
- <p>https://user-images.githubusercontent.com/99296562/155750808-e459742e-1190-4394-86fd-92968a9c3fef.mp4</p>
+ <p>https://user-images.githubusercontent.com/99296562/162761291-cb26f205-0d79-4e0c-bcb7-d6334c273087.mp4</p>
 </p>
 
 
 <p align="center">
  
- <p>https://user-images.githubusercontent.com/99296562/155751368-23460ed6-3b73-423c-9f26-282ae60c1bc8.mp4</p>
+ <p>https://user-images.githubusercontent.com/99296562/162761400-b1eab636-4431-411c-8a81-a8e356b2d128.mp4</p>
+ 
+ <p align="center">
+
+ 
+<p>https://user-images.githubusercontent.com/99296562/162761989-71938a38-751f-4a9a-ad0c-9ca6bdeab1ad.mp4</p>
+
+
+<p align="center">
+ 
+ <p>https://user-images.githubusercontent.com/99296562/162762966-7de0a041-83d6-4c75-bd39-7f0514be1f78.mp4</p>
+</p>
+
+
  
 
 💡 Nosso projeto se trata de um jogo que consiste na existência de 3 mundos, possuindo um mundo principal que dá acesso aos outros dois. Desse modo, tendo em vista que o jogo a ser desenvolvido trata-se de Diversidade e Inclusão, os dois mundos subsequentes ao oficial estarão relacionados, cada um, a uma diversidade social. Tendo a ideia exposta em mente, analisa-se que a melhor maneira de fazer um jogo de perguntas e respostas — como foi solicitado pelo cliente — é efetuar diversos minigames com o mesmo formato (contendo uma pergunta e, logo em seguida, 5 alternativas de resposta), sendo que em cada mundo os minigames serão relacionados à diversidade apresentada no mesmo. Além disso, é proposta a ideia de incluir no jogo um sistema de pontuação, no qual a cada minigame com resposta correta irá incrementar pontuação a conta do usuário. Assim, caso o cliente aceite um sistema de recompensas, o maior meio de atrair um maior número de usuários será através da troca de pontos por produtos fornecidos pelo cliente.
@@ -223,7 +235,7 @@ Coloque código do prompt de comnando se for necessário
 
 ## 📋 Licença/License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T1/Projeto1">DiveMon</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkmenu.com.br/DiveInc">Pedro Hagge Baptista, Abner Silva Barbosa, Yves Levi Paixão Lapa, João Pedro Gonçalves Carazzato, Amanda Ribeiro Fontes, Livia Coutinho, Guilherme Costa, Felipe Campos</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M1T1/Projeto1">DiveMon</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkmenu.com.br/DiveInc">Pedro Hagge Baptista, Abner Silva Barbosa, Yves Levi Paixão Lapa, João Pedro Gonçalves Carazzato, Amanda Ribeiro Fontes, Livia Coutinho, Felipe Campos</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
 
 ## 🎓 Referências
 

@@ -39,8 +39,8 @@ margin_bottom = -40.0
 
 [node name="Options" type="VBoxContainer" parent="."]
 visible = false
-margin_right = 1024.0
-margin_bottom = 600.0
+margin_right = 320.0
+margin_bottom = 180.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
@@ -81,13 +81,11 @@ samples = [ ExtResource( 9 ) ]
 random_strategy = 2
 
 [node name="Hovering" type="AudioStreamPlayer" parent="FX/Audio"]
-pitch_scale = 0.0001
 script = ExtResource( 8 )
 samples = [ ExtResource( 9 ) ]
 random_strategy = 2
 
 [node name="Selecting" type="AudioStreamPlayer" parent="FX/Audio"]
-pitch_scale = 0.0001
 script = ExtResource( 8 )
 samples = [ ExtResource( 9 ) ]
 random_strategy = 2
